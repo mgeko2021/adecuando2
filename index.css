@@ -155,7 +155,23 @@ body {
     -o-transform: skew(-18deg);
     transform: skew(-18deg);
     z-index: 0;
-    
+}
+#start .presentacion .nextBtn {
+    border: none;
+    background: #f72c2c;
+    -webkit-transform: skew(15deg);
+    -moz-transform: skew(15deg);
+    -ms-transform: skew(15deg);
+    -o-transform: skew(15deg);
+    transform: skew(15deg);
+    color: white;
+    font-weight: 900;
+    font-size: 2.3rem;
+    padding: 0.1rem 0.9rem;
+    position: relative;
+    z-index: 100;
+    font-style: italic;
+    margin-left: 0px;
 }
 
 .logo img{
