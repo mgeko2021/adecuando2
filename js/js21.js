@@ -53,6 +53,40 @@ let answer21 = () =>{
                 puntos21.classList.add("emergentesreturn");
                 // document.getElementById(`paginaproof21`).style.display ="block"
 
+                setTimeout(() => {
+    
+
+                    let tituleProof24 = document.querySelector(".tituleProof24") 
+                    let containerProof24Text = document.querySelector(".containerProof24Text") 
+                
+                    let tituleProof24B = document.querySelector(".tituleProof24B") 
+                    let containerProof24BText = document.querySelector(".containerProof24BText") 
+                
+                    let subtituleProof24B = document.getElementById("subtituleProof24B")
+                
+                
+                    setTimeout(() => {
+                        containerProof24Text.classList.add("transicion24Left")
+                        containerProof24BText.classList.add("transicion24LeftReturn")
+                
+                        tituleProof24.classList.add("transicion24Rigth")
+                        tituleProof24B.classList.add("transicion24RigthReturn")
+                        setTimeout(() => {
+                            subtituleProof24B.classList.add("transicion24RigthReturn")
+                        }, 200);
+                        
+                        document.getElementById(`paginaproof24`).style.display ="block"
+        
+                        
+                    }, 2000);
+
+            }, 4000);
+                
+
+// -------------movimiento de la 24------------         
+
+
+
                 
           
                 // terminadoJuego = true
@@ -69,8 +103,6 @@ let answer21 = () =>{
                 document.getElementById(`proof21`).style.left = "0%"
                 document.getElementById(`proof21`).classList.add('nextUP');
                 document.getElementById(`proof24`).classList.add('next2UP');
-        
-                document.getElementById(`paginaproof24`).style.display ="block"
 
     
             }, 6000);

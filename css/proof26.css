@@ -120,12 +120,12 @@
     border-radius: 1rem;
 }
 
-#parentezco:hover {
-    background-color: gainsboro;
+.clasegover#parentezco:hover {
+    background-color: rgb(175, 175, 175);
 }
 
 .grado:hover {
-    background-color: gainsboro;
+    background-color: rgb(175, 175, 175);
 }
 
 #logo16grado{
@@ -255,6 +255,43 @@
     background: #c22121;
 }
 
+
+/* ---------emergentebtna----------- */
+
+
+
+#consanguinidad26a{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.938);
+    width: 90%;
+    height: 90%;
+    border-radius: 2rem;
+    z-index: 110;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 2rem;
+    left: 100%;
+    margin: 5%;
+}
+/* ---------emergentebtna----------- */
+
+
+
+#consanguinidad26b{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.938);
+    width: 90%;
+    height: 90%;
+    border-radius: 2rem;
+    z-index: 110;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 2rem;
+    left: 100%;
+    margin: 5%;
+}
 
 /* ---------emergente2----------- */
 

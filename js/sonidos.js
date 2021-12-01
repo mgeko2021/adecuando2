@@ -91,6 +91,7 @@ let proof9bool = false
 
 let proof11bool = false
 let proof18bool = false
+let proof21bool = false
 let prof24bool = false
 let proof30bool = false
 
@@ -276,17 +277,13 @@ let sonidoNext = (name, nextName,nextName2) => {
         case "proof18": //pista nivles vistos
         if(!proof18bool){
                 document.getElementById(`pagina${nextName}`).style.display ="none"
+                document.getElementById(`pagina${nextName2}`).style.display ="none"
                 proof18bool = true
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
             }
             break;
         
-        case "proof21": //pista nivles vistos
-                document.getElementById(`pagina${nextName}`).style.display ="block"
-                document.getElementById(`pagina${name}`).style.display ="none"
-            break;
-
             
         case "proof24": // ele juego de arratrar
         if(!prof24bool){
@@ -294,7 +291,8 @@ let sonidoNext = (name, nextName,nextName2) => {
             prof24bool = true
         } else {
             document.getElementById(`pagina${nextName}`).style.display ="block"
-        }            break;
+        }
+            break;
 
         case "proof29":  //modificar
                 document.getElementById(`pagina${nextName}`).style.display ="block"
