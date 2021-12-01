@@ -1,0 +1,129 @@
+#proof13{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 100%;
+    /* left: 0%; */
+    top: 0%;
+}
+
+.presentacion13 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+    
+}
+
+
+.tituleProof13{
+    position: absolute;
+    top: 20%;
+    left: 3.5rem;
+    text-align: left;
+}
+.tituleProof13 p{
+    font-size:2.8rem;
+    color: black ;
+}
+
+.tituleProof13 h3{
+    font-size:3.5rem;
+    margin-top: -1rem;
+    color: black ;
+}
+
+.tituleProof13 h4{
+    color: black ;
+    font-size: 1.8rem;
+}
+
+.containerProof13{
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 40%;
+}
+
+.containerProof13Text{
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.containerProof13Text h4{
+    color: black;    
+    font-size: 1.8rem;
+}
+
+.containerProof13Text b{
+    color: black;    
+}
+
+.containerProof13Img p{
+    color: black;
+    font-size: 1.4rem;
+}
+
+.containerProof13Img{
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    height: 18rem;
+    align-items: center;
+
+}
+
+.containerProof13Div h4{
+    margin-left: 3rem;
+    margin-bottom: 0;
+}
+
+.risk8{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.risk8 img{
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#clientes13{
+    margin-top: 1rem;
+    width: 10rem;
+}
+
+#productos13{
+    margin-top: 1rem;
+    width: 10.5rem;
+}
+
+#canales13{
+    width: 10.2rem;
+}
+
+#jurisdiccion13{
+    margin-top: 0.9rem;
+    width: 10.2rem;
+}
+
+#usuario13{
+    margin-top: -3rem;
+    width: 10rem;
+}
+
+
+
+
+

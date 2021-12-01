@@ -1,0 +1,37 @@
+#proof40a{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    left: 100%;
+    /* left: 0%; */
+    z-index:1;
+}
+
+.presentacion40a {
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    height: 100vh;
+    text-align: center;
+    color: black;
+    width: 100%;
+    z-index: 10;
+}
+
+.tituleProof40a{
+    position: absolute;
+    top: 40%;
+    width: 90%;
+    text-align: left;
+}
+
+.tituleProof40a h2{
+    font-size: 3.2rem;
+}
+
+.tituleProof40a h3{
+    font-size: 3.2rem;
+    margin-top: -1.5rem;
+}
+
