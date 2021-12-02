@@ -1,13 +1,17 @@
 let btnLetter = document.querySelectorAll('.letterShoot')
+let terminadoJuego38 = false
 
 let letterShot = (id) => { 
 
     let puntos38 = document.getElementById("puntos38ID")
     let nopuntos38 = document.getElementById("noPuntos38ID")
+    if(terminadoJuego38 == false){
 
     if(id == "letterShoot4") {
         document.getElementById(id).style.color = "#00a135"
         document.getElementById(id).style.borderColor = "#00a135"
+        terminadoJuego38 = true
+
 
         puntos38.classList.remove("emergentesreturn");
         puntos38.classList.add("emergentes"); 
@@ -16,7 +20,6 @@ let letterShot = (id) => {
             puntos38.classList.add("emergentesreturn");
 
       
-            // terminadoJuego = true
         }, 4000);
 
         setTimeout(() => {
@@ -32,20 +35,20 @@ let letterShot = (id) => {
 
         }, 6000);
 
-    } else {
-        document.getElementById(id).style.color = "red"
-        document.getElementById(id).style.borderColor = "red"
+        } else {
+            document.getElementById(id).style.color = "red"
+            document.getElementById(id).style.borderColor = "red"
+
+            
+            nopuntos38.classList.remove("emergentesreturn");
+            nopuntos38.classList.add("emergentes"); 
+            setTimeout(function(){ 
+                nopuntos38.classList.remove("emergentes");
+                nopuntos38.classList.add("emergentesreturn");
 
         
-        nopuntos38.classList.remove("emergentesreturn");
-        nopuntos38.classList.add("emergentes"); 
-        setTimeout(function(){ 
-            nopuntos38.classList.remove("emergentes");
-            nopuntos38.classList.add("emergentesreturn");
-
-      
-            // terminadoJuego = true
-        }, 3000);
+            }, 3000);
+        }
     }
 
 }

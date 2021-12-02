@@ -2,6 +2,9 @@ let btnNextBuild = document.querySelectorAll('body button.nextBtn')
 
 // documentos 
 
+let ready21 = false
+
+
 
 let build = (name, nextName, nextName2) =>{
     
@@ -93,32 +96,57 @@ let build = (name, nextName, nextName2) =>{
             
             break;
 
-        case "proof21":
+        // case "proof21":
+        //     if(ready21  == false){
+                
+        //         let tituleProof24 = document.querySelector(".tituleProof24") 
+        //         let containerProof24Text = document.querySelector(".containerProof24Text") 
+            
+        //         let tituleProof24B = document.querySelector(".tituleProof24B") 
+        //         let containerProof24BText = document.querySelector(".containerProof24BText") 
+            
+        //         let subtituleProof24B = document.getElementById("subtituleProof24B")
+            
+            
+        //         setTimeout(() => {
+        //             ready21 == true
+        //             containerProof24Text.classList.add("transicion24Left")
+        //             containerProof24BText.classList.add("transicion24LeftReturn")
+            
+        //             tituleProof24.classList.add("transicion24Rigth")
+        //             tituleProof24B.classList.add("transicion24RigthReturn")
+        //             setTimeout(() => {
+        //                 subtituleProof24B.classList.add("transicion24RigthReturn")
+        //             }, 200);
+                    
+        //             document.getElementById(`paginaproof24`).style.display ="block"
 
-            let tituleProof24 = document.querySelector(".tituleProof24") 
-            let containerProof24Text = document.querySelector(".containerProof24Text") 
+                    
+        //         }, 2000);
+        //     }
+        //     break;
+
+        case "proof38":
+            const containerProof39TexUno = document.querySelector(".containerProof39TexUno")
+            const containerProof39TexDos = document.querySelector(".containerProof39TexDos")
         
-            let tituleProof24B = document.querySelector(".tituleProof24B") 
-            let containerProof24BText = document.querySelector(".containerProof24BText") 
+            let medio39 = document.getElementById("medio39") 
+            let adelante39 = document.getElementById("adelante39") 
+            let fondo39 = document.getElementById("fondo39") 
         
-            let subtituleProof24B = document.getElementById("subtituleProof24B")
+            medio39.classList.add("translatefastleft39")
+            fondo39.classList.add("translatefastrigth39")
+            adelante39.classList.add("translatefasfront39")
         
-        
+            containerProof39TexUno.classList.add("opacityanimateinverse")
             setTimeout(() => {
-                containerProof24Text.classList.add("transicion24Left")
-                containerProof24BText.classList.add("transicion24LeftReturn")
+                containerProof39TexUno.style.display = "none"
+                containerProof39TexDos.style.display = "block"
+                containerProof39TexDos.classList.add("opacityanimate")
         
-                tituleProof24.classList.add("transicion24Rigth")
-                tituleProof24B.classList.add("transicion24RigthReturn")
-                setTimeout(() => {
-                    subtituleProof24B.classList.add("transicion24RigthReturn")
-                }, 200);
-                
-                document.getElementById(`paginaproof24`).style.display ="block"
-
-                
             }, 2000);
-            break;
+
+        break
     
         default:
             break;
@@ -136,53 +164,53 @@ btnNextBuild.forEach((button, index) => {
 
 
 
-let proof34 = document.getElementById("proof34")
+// let proof34 = document.getElementById("proof34")
 
-let change34 = () =>{
-    const containerProof34hidden = document.querySelector(".containerProof34hidden")
-    const containerProof34show = document.querySelector(".containerProof34show")
+// let change34 = () =>{
+//     const containerProof34hidden = document.querySelector(".containerProof34hidden")
+//     const containerProof34show = document.querySelector(".containerProof34show")
 
-    let medioProof34 = document.getElementById("medioProof34") 
-    let fondo34 = document.getElementById("fondo34") 
+//     let medioProof34 = document.getElementById("medioProof34") 
+//     let fondo34 = document.getElementById("fondo34") 
 
-    medioProof34.classList.add("translatefastleft")
-    fondo34.classList.add("translatefastrigth")
+//     medioProof34.classList.add("translatefastleft")
+//     fondo34.classList.add("translatefastrigth")
 
-    containerProof34hidden.classList.add("opacityanimateinverse")
-    setTimeout(() => {
-        containerProof34hidden.style.display = "none"
-        containerProof34show.style.display = "block"
-        containerProof34show.classList.add("opacityanimate")
+//     containerProof34hidden.classList.add("opacityanimateinverse")
+//     setTimeout(() => {
+//         containerProof34hidden.style.display = "none"
+//         containerProof34show.style.display = "block"
+//         containerProof34show.classList.add("opacityanimate")
 
-    }, 2000);
+//     }, 2000);
 
-}
+// }
 
-proof34.addEventListener("click", change34)
+// proof34.addEventListener("click", change34)
 
 
-let proof39 = document.getElementById("proof39")
+// let proof39 = document.getElementById("proof39")
 
-let change39 = () =>{
-    const containerProof39TexUno = document.querySelector(".containerProof39TexUno")
-    const containerProof39TexDos = document.querySelector(".containerProof39TexDos")
+// let change39 = () =>{
+//     const containerProof39TexUno = document.querySelector(".containerProof39TexUno")
+//     const containerProof39TexDos = document.querySelector(".containerProof39TexDos")
 
-    let medio39 = document.getElementById("medio39") 
-    let adelante39 = document.getElementById("adelante39") 
-    let fondo39 = document.getElementById("fondo39") 
+//     let medio39 = document.getElementById("medio39") 
+//     let adelante39 = document.getElementById("adelante39") 
+//     let fondo39 = document.getElementById("fondo39") 
 
-    medio39.classList.add("translatefastleft39")
-    fondo39.classList.add("translatefastrigth39")
-    adelante39.classList.add("translatefasfront39")
+//     medio39.classList.add("translatefastleft39")
+//     fondo39.classList.add("translatefastrigth39")
+//     adelante39.classList.add("translatefasfront39")
 
-    containerProof39TexUno.classList.add("opacityanimateinverse")
-    setTimeout(() => {
-        containerProof39TexUno.style.display = "none"
-        containerProof39TexDos.style.display = "block"
-        containerProof39TexDos.classList.add("opacityanimate")
+//     containerProof39TexUno.classList.add("opacityanimateinverse")
+//     setTimeout(() => {
+//         containerProof39TexUno.style.display = "none"
+//         containerProof39TexDos.style.display = "block"
+//         containerProof39TexDos.classList.add("opacityanimate")
 
-    }, 2000);
+//     }, 2000);
 
-}
+// }
 
-proof39.addEventListener("click", change39)
+// proof39.addEventListener("click", change39)

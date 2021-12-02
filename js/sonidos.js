@@ -4,80 +4,40 @@ let btnBeforeSonidos = document.querySelectorAll('body button.beforeBtn')
 
 let nivelesZindex = document.querySelector(".logo")
 
+//pagina start
+var ref0 = new Audio();
+ref0.src="./sonidos/Pagina1/pagina1.mp3";
 
-
-// sonidos ref 1 2 y 3
+// proof 0
 var ref1 = new Audio();
-ref1.src="./sonidos/referencias1,2y3/REF 1-2.mp3";
+ref1.src="./sonidos/Pagina2/pagina2.mp3";
 
+// proof 2
 var ref2 = new Audio();
-ref2.src="./sonidos/referencias1,2y3/REF 2-1.mp3";
+ref2.src="./sonidos/Pagina3/pagina3.mp3";
 
+// proof 3
 var ref3 = new Audio();
-ref3.src="./sonidos/referencias1,2y3/ref 3.mp3";
+ref3.src="./sonidos/Pagina4/pagina4.mp3";
 
-// sonidos ref 4 y 7
-var ref4_1 = new Audio();
-ref4_1.src="./sonidos/referencias4y7/REF 4-1.mp3";
-
-// sonidos ref 4 y 7
-var ref4_2 = new Audio();
-ref4_2.src="./sonidos/referencias4y7/REF 4-2.mp3";
-
-var ref7 = new Audio();
-ref7.src="./sonidos/referencias4y7/REF 7.mp3";
-
-//sonidos 5
+// proof 5
 var ref5 = new Audio();
-ref5.src="./sonidos/referencia5/REF 5.mp3";
+ref5.src="./sonidos/Pagina5/pagina5.mp3";
 
-//sonidos 6
-var ref6_1 = new Audio();
-ref6_1.src="./sonidos/referencia6/REF6/REF 6-1.mp3";
 
-//sonidos 9
-var ref9 = new Audio();
-ref9.src="./sonidos/referencia9/9.3.mp3";
 
-//sonidos 10 y 11
-var ref10 = new Audio();
-ref10.src="./sonidos/referencias10y11/REF 10.1.mp3";
+// //sonidos 13
+// var ref13_1 = new Audio();
+// ref13_1.src="./sonidos/Referencia 12-13-14-15/REF 13-1.mp3";
 
-var ref11 = new Audio();
-ref11.src="./sonidos/referencias10y11/Referencia 11/REF 11-1.mp3";
-
-//sonidos 12
-var ref12_1 = new Audio();
-ref12_1.src="./sonidos/Referencia 12-13-14-15/REF 12-1.mp3";
-
-var ref12_2 = new Audio();
-ref12_2.src="./sonidos/Referencia 12-13-14-15/REF 12-2.mp3";
-
-//sonidos 13
-var ref13_1 = new Audio();
-ref13_1.src="./sonidos/Referencia 12-13-14-15/REF 13-1.mp3";
-
-var ref13_2 = new Audio();
-ref13_2.src="./sonidos/Referencia 12-13-14-15/REF 13-2.mp3";
-
-//sonidos 14
-
-var ref14_1 = new Audio();
-ref14_1.src="./sonidos/Referencia 12-13-14-15/REF 14-1.mp3";
-
-//sonidos 15
-
-var ref15_1 = new Audio();
-ref15_1.src="./sonidos/Referencia 12-13-14-15/REF 15-1.mp3";
-
-var silbato = new Audio();
-silbato.src="./sonidos/SILBATO.mp3";
-
+// var ref13_2 = new Audio();
+// ref13_2.src="./sonidos/Referencia 12-13-14-15/REF 13-2.mp3";
 
 
 let startbool = false
 let proof0bool = false
 let proof1bool = false
+let proof2bool = false
 let proof3abool = false
 let proof4bool = false
 let proof6bool = false
@@ -157,53 +117,48 @@ let sonidoNext = (name, nextName,nextName2) => {
         
         case "start": // de start a prof1
             if(!startbool){
-            // setTimeout(() => {
-            //     document.getElementById(`pagina${nextName}`).style.display ="block"
-            //     startbool = true
-            // }, );
-                document.getElementById(`pagina${nextName}`).style.display ="block"
-                startbool = true
+                ref0.play()  // subir lucho
+
+                setTimeout(() => {
+                    document.getElementById(`pagina${nextName}`).style.display ="block"
+                    startbool = true
+                }, 12000);
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
             }
             break
 
         case "proof0": // de start a prof1
-            if(!proof1bool){
-            // setTimeout(() => {
-            //     document.getElementById(`pagina${nextName}`).style.display ="block"
-            //     startbool = true
-            // }, );
-                document.getElementById(`pagina${nextName}`).style.display ="none"
-                proof1bool = true
+            if(!proof0bool){
+                ref1.play()
+                proof0bool = true
+
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
-            }
+                document.getElementById(`pagina${name}`).style.display ="none"
+                }
             break
 
-        
-        case "proof1": // de proof 2
-            // ref1.pause()  // subir lucho
-            if(!proof1bool){
-            // setTimeout(() => {
-                document.getElementById(`pagina${nextName}`).style.display ="block"
-                proof1bool = true
-            // }, 5000);
-            } else {
-                document.getElementById(`pagina${nextName}`).style.display ="block"
-            }
-
-            break;
 
         case "proof2": // subir lucho
+        if(!proof2bool){
+            ref3.play()
+            proof2bool = true
+                setTimeout(() => {
+                document.getElementById(`pagina${nextName}`).style.display ="block"
+                }, 51000);
+
+        } else {
             document.getElementById(`pagina${nextName}`).style.display ="block"
             document.getElementById(`pagina${name}`).style.display ="none"
-            break;
+            }
+        break
 
         case "proof3": //automatica vertical
             if(!auto3){
                 // setTimeout(() => {
-                    document.getElementById(`pagina${nextName}`).style.display ="block"
+                    ref5.play()
+                    document.getElementById(`pagina${nextName}`).style.display ="none"
                     auto3 = true
 
             // }, 5000);
@@ -229,6 +184,7 @@ let sonidoNext = (name, nextName,nextName2) => {
         case "proof4":
             if(!proof4bool){
             // setTimeout(() => {
+                
                 document.getElementById(`pagina${nextName}`).style.display ="block"
                 proof4bool = true
             // }, 53000);
@@ -302,16 +258,13 @@ let sonidoNext = (name, nextName,nextName2) => {
         case "proof30":
             if(!proof30bool){
                 document.getElementById(`pagina${nextName}`).style.display ="none"
+                document.getElementById(`pagina${nextName2}`).style.display ="none"
                 proof30bool = true
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
             }
             break;
 
-        case "proof31": //listo
-                document.getElementById(`pagina${nextName}`).style.display ="block"
-                document.getElementById(`pagina${name}`).style.display ="none"
-            break;
 
         case "proof32": // listo
                 document.getElementById(`pagina${nextName}`).style.display ="block"
@@ -325,13 +278,6 @@ let sonidoNext = (name, nextName,nextName2) => {
             document.getElementById(`pagina${nextName}`).style.display ="block"
             document.getElementById(`pagina${name}`).style.display ="none"
             break;
-
-
-        case "proof35":
-                document.getElementById(`pagina${nextName}`).style.display ="block"
-                document.getElementById(`pagina${name}`).style.display ="none"
-            break;
-    
 
         case "proof36": //listo
                 document.getElementById(`pagina${nextName}`).style.display ="block"
@@ -349,39 +295,13 @@ let sonidoNext = (name, nextName,nextName2) => {
         case "proof39": // listo
         if(!proof39bool){
             document.getElementById(`pagina${nextName}`).style.display ="none"
-            proof3bool = true
+            proof39bool = true
         } else {
             document.getElementById(`pagina${nextName}`).style.display ="block"
         }
         break;           
 
  
-        case "proof38": //listo
-                document.getElementById(`pagina${nextName}`).style.display ="block"
-                document.getElementById(`pagina${name}`).style.display ="none"
-            break;
-
-        case "proof41": // listo 
-                document.getElementById(`pagina${nextName}`).style.display ="block"
-            break;
-
-        case "proof40": // listo
-                document.getElementById(`pagina${nextName}`).style.display ="block"
-            break;
-
-        case "proof40a": //listo
-                document.getElementById(`pagina${nextName}`).style.display ="block"
-                document.getElementById(`pagina${name}`).style.display ="none"
-            break;
-
-        case "proof43": //listo
-                document.getElementById(`pagina${nextName}`).style.display ="block"
-            break;
-
-        case "proof43": //listo
-                document.getElementById(`pagina${nextName}`).style.display ="block"
-            break;
-
         default:
             document.getElementById(`pagina${nextName}`).style.display ="block"
             document.getElementById(`pagina${name}`).style.display ="none"

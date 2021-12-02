@@ -22,7 +22,7 @@ let answer21 = () =>{
     if(document.querySelector('input[name="proof21_1"]:checked')
     && document.querySelector('input[name="proof21_2"]:checked')
     && document.querySelector('input[name="proof21_3"]:checked')
-    && !termino
+    && termino == false
     ){
 
         console.log("ya click all")

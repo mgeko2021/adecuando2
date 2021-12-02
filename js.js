@@ -10,12 +10,41 @@ let transicionAutoVHV = false
 let proof15VHV = false
 let transicion1 = false
 let click = false
+let transicionRef6 = false
+
+let sound1 = false
 
 
 let transitionNext = (name, nextName, nextName2) => {
 
     // desplazamiento inicial
     switch (name) {
+
+        case "start":
+            if (sound1 == false) {
+                setTimeout(() => {
+                    document.getElementById(`${name}`).classList.remove('beforeUP');
+                    document.getElementById(`${nextName}`).classList.remove('beforeUP');
+                    document.getElementById(`${nextName}`).classList.remove('before2UP');
+                    document.getElementById(`${name}`).classList.remove('next2UP');
+                    // document.getElementById(${name}).style.left = "0%"
+                    document.getElementById(`${name}`).classList.add('nextUP');
+                    document.getElementById(`${nextName}`).classList.add('next2UP');
+                    sound1 = true
+                        
+                }, 12000);
+    
+            } else{
+                document.getElementById(`${name}`).classList.remove('beforeUP');
+                document.getElementById(`${nextName}`).classList.remove('beforeUP');
+                document.getElementById(`${nextName}`).classList.remove('before2UP');
+                document.getElementById(`${name}`).classList.remove('next2UP');
+                // document.getElementById(${name}).style.left = "0%"
+                document.getElementById(`${name}`).classList.add('nextUP');
+                document.getElementById(`${nextName}`).classList.add('next2UP');
+            
+            }
+            break
 
         // normalizado vetical, vertical, horizontal automatizado
         case "proof3a":
@@ -26,6 +55,15 @@ let transitionNext = (name, nextName, nextName2) => {
             // document.getElementById(${name}).style.left = "0%"
             document.getElementById(`${name}`).classList.add('nextUP');
             document.getElementById(`${nextName}`).classList.add('next2UP');
+
+            if(!transicionRef6){
+                transicionRef6 = true
+                var ref6 = new Audio();
+                ref6.src="./sonidos/Pagina6/pagina6.mp3";
+                ref6.play()
+    
+            }
+
             if(!transicionAuto){
                 setTimeout(() => {
                     document.getElementById(`${nextName}`).classList.remove('beforeUP');
@@ -39,7 +77,7 @@ let transitionNext = (name, nextName, nextName2) => {
                     // document.getElementById(`pagina${nextName2}`).style.display ="block"
 
                     transicionAuto = true
-                }, 5000);
+                }, 12000);
 
             } else {
                 document.getElementById(`${name}`).classList.remove('beforeUP');
@@ -75,11 +113,20 @@ let transitionNext = (name, nextName, nextName2) => {
                     document.getElementById(`${nextName2}`).classList.add('next2UP');
 
                     //boton para mostrar
-                    document.getElementById(`pagina${nextName2}`).style.display ="block"
+                    // proof 2
+                    var ref2 = new Audio();
+
+                    ref2.src="./sonidos/Pagina3/pagina3.mp3";
+                    ref2.play()
+
+                    setTimeout(() => {
+                        document.getElementById(`pagina${nextName2}`).style.display ="block"
+                        
+                    }, 21000);
 
 
                     transicion1 = true
-                }, 5000);
+                }, 13000);
 
             }
             break

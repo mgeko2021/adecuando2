@@ -223,7 +223,27 @@ let juego4 = false
           document.getElementById(`proof33`).classList.add('nextUP');
           document.getElementById(`proof34`).classList.add('next2UP');
   
-          document.getElementById(`paginaproof34`).style.display ="block"
+
+
+          const containerProof34hidden = document.querySelector(".containerProof34hidden")
+          const containerProof34show = document.querySelector(".containerProof34show")
+      
+          let medioProof34 = document.getElementById("medioProof34") 
+          let fondo34 = document.getElementById("fondo34") 
+      
+          medioProof34.classList.add("translatefastleft")
+          fondo34.classList.add("translatefastrigth")
+      
+          containerProof34hidden.classList.add("opacityanimateinverse")
+          setTimeout(() => {
+              containerProof34hidden.style.display = "none"
+              containerProof34show.style.display = "block"
+              containerProof34show.classList.add("opacityanimate")
+
+              document.getElementById(`paginaproof34`).style.display ="block"
+
+      
+          }, 2000);
 
 
       }, 6000);
