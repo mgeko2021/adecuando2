@@ -22,9 +22,18 @@ ref3.src="./sonidos/Pagina4/pagina4.mp3";
 var ref5 = new Audio();
 ref5.src="./sonidos/Pagina5/pagina5.mp3";
 
-// proof 15
+// proof 13
 var ref8 = new Audio();
 ref8.src="./sonidos/Pagina8/pagina8.mp3";
+
+// proof 15
+var ref9 = new Audio();
+ref9.src="./sonidos/Pagina9/pagina9.mp3";
+
+
+// proof 16
+var ref16 = new Audio();
+ref16.src="./sonidos/Pagina10/pagina10.mp3";
 
 
 
@@ -54,6 +63,7 @@ let proof7bool = false
 let proof9bool = false
 
 let proof11bool = false
+let proof13bool = false
 let proof18bool = false
 let proof21bool = false
 let prof24bool = false
@@ -217,14 +227,25 @@ let sonidoNext = (name, nextName,nextName2) => {
             }
 
             break;
-
-        case "proof15": // //derechos y deberes lucho NO SE PUEDE QUITAR
-            if(!derYDeb){
+        
+        case "proof13":
+            if(!proof13bool){
+                ref9.play()
                 setTimeout(() => {
-                    document.getElementById(`paginaproof17`).style.display ="block"
-                    derYDeb = true
+                    document.getElementById(`pagina${nextName}`).style.display ="block"
+                    proof13bool = true
+                }, 50000);
+            } else {
+                document.getElementById(`pagina${nextName}`).style.display ="block"
+            }
 
-            }, 5000);
+            break;
+
+        case "proof15": // este cambia
+            if(!derYDeb){
+                ref16.play()
+                derYDeb = true
+
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
                 document.getElementById(`pagina${name}`).style.display ="none"
