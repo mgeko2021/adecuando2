@@ -35,6 +35,14 @@ ref9.src="./sonidos/Pagina9/pagina9.mp3";
 var ref16 = new Audio();
 ref16.src="./sonidos/Pagina10/pagina10.mp3";
 
+// proof 16
+var ref17 = new Audio();
+ref17.src="./sonidos/Pagina11/pagina11.mp3";
+
+// proof 21
+var ref21 = new Audio();
+ref21.src="./sonidos/Pagina13/pagina13.mp3";
+
 
 
 
@@ -64,6 +72,7 @@ let proof9bool = false
 
 let proof11bool = false
 let proof13bool = false
+let proof17bool = false
 let proof18bool = false
 let proof21bool = false
 let prof24bool = false
@@ -253,15 +262,18 @@ let sonidoNext = (name, nextName,nextName2) => {
             break;
         
         case "proof16": //NO SE MODIFICAN
-            // if(!medallas16){
-            // document.getElementById(`pagina${nextName}`).style.display ="none"
-            // document.getElementById(`pagina${name}`).style.display ="none"
-            // medallas16 = true
-            // } else {
-                document.getElementById(`pagina${nextName}`).style.display ="block"
-                document.getElementById(`pagina${name}`).style.display ="none"
-            // }
-            break;
+        if(!proof17bool){
+            ref17.play()
+            setTimeout(() => {
+                document.getElementById(`pagina${nextName}`).style.display ="block"    
+            }, 17000);
+            proof17bool = true
+
+        } else {
+            document.getElementById(`pagina${nextName}`).style.display ="block"
+            document.getElementById(`pagina${name}`).style.display ="none"
+        }
+        break;
     
         case "proof17": 
             document.getElementById(`pagina${nextName}`).style.display ="block"
@@ -270,6 +282,7 @@ let sonidoNext = (name, nextName,nextName2) => {
         
         
         case "proof18": //pista nivles vistos
+        ref21.play()
         if(!proof18bool){
                 document.getElementById(`pagina${nextName}`).style.display ="none"
                 document.getElementById(`pagina${nextName2}`).style.display ="none"
