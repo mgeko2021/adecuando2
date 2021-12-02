@@ -135,37 +135,37 @@ let transitionNext = (name, nextName, nextName2) => {
         // case "start":
         // normalizado vetical, horizontal, vertical automatizado
 
-        case "proof15":
-            document.getElementById(`${name}`).classList.remove('beforeUP');
-            document.getElementById(`${nextName}`).classList.remove('before');
-            document.getElementById(`${nextName}`).classList.remove('before2');
-            document.getElementById(`${name}`).classList.remove('next2UP');
-            document.getElementById(`${name}`).classList.add('nextUP');
-            document.getElementById(`${nextName}`).classList.add('next2');
-            if(proof15VHV == false){
-                setTimeout(() => {
+        // case "proof15":
+        //     document.getElementById(`${name}`).classList.remove('beforeUP');
+        //     document.getElementById(`${nextName}`).classList.remove('before');
+        //     document.getElementById(`${nextName}`).classList.remove('before2');
+        //     document.getElementById(`${name}`).classList.remove('next2UP');
+        //     document.getElementById(`${name}`).classList.add('nextUP');
+        //     document.getElementById(`${nextName}`).classList.add('next2');
+        //     if(proof15VHV == false){
+        //         setTimeout(() => {
 
-                    document.getElementById(`${nextName}`).style.left = "0%";
-                    document.getElementById(`${nextName}`).classList.remove('beforeUP');
-                    document.getElementById(`${nextName}`).classList.add('next2');
-                    document.getElementById(`${nextName}`).classList.add('nextUP');
+        //             document.getElementById(`${nextName}`).style.left = "0%";
+        //             document.getElementById(`${nextName}`).classList.remove('beforeUP');
+        //             document.getElementById(`${nextName}`).classList.add('next2');
+        //             document.getElementById(`${nextName}`).classList.add('nextUP');
 
 
-                    document.getElementById(`${nextName2}`).classList.remove('beforeUP');
-                    document.getElementById(`${nextName2}`).classList.remove('before2UP');
-                    document.getElementById(`${nextName2}`).classList.add('next2UP');
-                    proof15VHV = true
-                }, 5000);
-            } else {
-                document.getElementById(`${name}`).classList.remove('beforeUP');
-                document.getElementById(`${nextName}`).classList.remove('before');
-                document.getElementById(`${nextName}`).classList.remove('before2');
-                document.getElementById(`${name}`).classList.remove('next2UP');
-                document.getElementById(`${name}`).classList.add('nextUP');
-                document.getElementById(`${nextName}`).classList.add('next2');
-            }
+        //             document.getElementById(`${nextName2}`).classList.remove('beforeUP');
+        //             document.getElementById(`${nextName2}`).classList.remove('before2UP');
+        //             document.getElementById(`${nextName2}`).classList.add('next2UP');
+        //             proof15VHV = true
+        //         }, 5000);
+        //     } else {
+        //         document.getElementById(`${name}`).classList.remove('beforeUP');
+        //         document.getElementById(`${nextName}`).classList.remove('before');
+        //         document.getElementById(`${nextName}`).classList.remove('before2');
+        //         document.getElementById(`${name}`).classList.remove('next2UP');
+        //         document.getElementById(`${name}`).classList.add('nextUP');
+        //         document.getElementById(`${nextName}`).classList.add('next2');
+        //     }
     
-            break;
+        //     break;
     
 
         //normalizado horizontal adyecten inmediatamente anterior

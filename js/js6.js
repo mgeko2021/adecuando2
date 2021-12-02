@@ -100,7 +100,7 @@ console.log()
         if((document.getElementById('pieza1').parentNode.id =='tres') &&
         (document.getElementById('pieza2').parentNode.id =='dos') &&
         (document.getElementById('pieza3').parentNode.id =='uno') &&
-        (document.getElementById('pieza4').parentNode.id =='cuatro')
+        (document.getElementById('pieza4').parentNode.id =='cuatro') && endGame == false
         
         ){  
             setTimeout(() => {
@@ -136,9 +136,16 @@ console.log()
                 document.getElementById(`proof6`).classList.add('nextUP');
                 document.getElementById(`proof8`).classList.add('next2UP');
 
-                document.getElementById(`paginaproof8`).style.display ="block"
 
-    
+
+                // proof 8
+                var ref8 = new Audio();
+                ref8.src="./sonidos/Pagina7/pagina7.mp3";
+                ref8.play()
+                setTimeout(() => {
+                    document.getElementById(`paginaproof8`).style.display ="block"
+                }, 45000);
+
             }, 6000);
 
         
