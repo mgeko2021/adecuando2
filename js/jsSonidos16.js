@@ -14,6 +14,10 @@ let click16a = false
 let click16b = false
 let click16c = false
 
+var ref16 = new Audio();
+ref16.src="./sonidos/Pagina10/pagina10.mp3";
+
+
 console.log(productServSon16)
 
 const sonidoproductServSon16 = (name) =>{
