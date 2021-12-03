@@ -178,11 +178,9 @@ let sonidoNext = (name, nextName,nextName2) => {
 
         case "proof0": // de start a prof1
             if(!proof0bool){
-                ref1.play()
                 proof0bool = true
-                setTimeout(() => {
-                    document.getElementById(`pagina${name}`).style.display ="block"    
-                }, 56000);
+                ref1.play()
+                    document.getElementById(`pagina${name}`).style.display ="block"
 
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
