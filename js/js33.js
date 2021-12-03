@@ -109,6 +109,14 @@ let juego2 = false
 let juego3 = false
 let juego4 = false
 
+
+// proof 34
+var ref34 = new Audio();
+ref34.src="./sonidos/Pagina18/pagina18.mp3";
+
+var ref34b = new Audio();
+ref34b.src="./sonidos/Pagina18/18b.mp3";
+
   
   function comprobarPuzzle33(){
     // -----text Change---------
@@ -215,6 +223,7 @@ let juego4 = false
         
   
         setTimeout(() => {
+          ref34.play()
           document.getElementById(`proof33`).classList.remove('beforeUP');
           document.getElementById(`proof34`).classList.remove('beforeUP');
           document.getElementById(`proof34`).classList.remove('before2UP');
@@ -224,26 +233,29 @@ let juego4 = false
           document.getElementById(`proof34`).classList.add('next2UP');
   
 
-
-          const containerProof34hidden = document.querySelector(".containerProof34hidden")
-          const containerProof34show = document.querySelector(".containerProof34show")
-      
-          let medioProof34 = document.getElementById("medioProof34") 
-          let fondo34 = document.getElementById("fondo34") 
-      
-          medioProof34.classList.add("translatefastleft")
-          fondo34.classList.add("translatefastrigth")
-      
-          containerProof34hidden.classList.add("opacityanimateinverse")
           setTimeout(() => {
+
+              const containerProof34hidden = document.querySelector(".containerProof34hidden")
+              const containerProof34show = document.querySelector(".containerProof34show")
+          
+              let medioProof34 = document.getElementById("medioProof34") 
+              let fondo34 = document.getElementById("fondo34") 
+          
+              medioProof34.classList.add("translatefastleft")
+              fondo34.classList.add("translatefastrigth")
+          
+              containerProof34hidden.classList.add("opacityanimateinverse")
+              ref34b.play()
               containerProof34hidden.style.display = "none"
               containerProof34show.style.display = "block"
               containerProof34show.classList.add("opacityanimate")
 
-              document.getElementById(`paginaproof34`).style.display ="block"
+              setTimeout(() => {
+                document.getElementById(`paginaproof34`).style.display ="block"
+              }, 9000);
 
       
-          }, 2000);
+          }, 58000);
 
 
       }, 6000);

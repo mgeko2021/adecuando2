@@ -3,6 +3,12 @@ let btnNextBuild = document.querySelectorAll('body button.nextBtn')
 // documentos 
 
 let ready21 = false
+let ready30 = false
+
+
+// proof 24
+var ref30 = new Audio();
+ref30.src="./sonidos/Pagina16/pagina16.mp3";
 
 
 
@@ -125,6 +131,39 @@ let build = (name, nextName, nextName2) =>{
         //         }, 2000);
         //     }
         //     break;
+
+        case "proof29":
+                        
+            if(!ready30){
+                ref30.play()
+                ready30 = true
+                setTimeout(() => {
+                    const containerProof30Text = document.querySelector(".containerProof30Text")
+                    const containerProof30Text2 = document.querySelector(".containerProof30Text2")
+
+                    let atrasProof30 = document.getElementById("atrasProof30") 
+                    let adelanteProof30 = document.getElementById("adelanteProof30") 
+        
+                    containerProof30Text.classList.add("opacityanimateinverse")
+                    setTimeout(() => {
+                        containerProof30Text.style.display = "none"
+                        containerProof30Text2.style.display = "block"
+                        containerProof30Text2.classList.add("opacityanimate")
+
+                        setTimeout(() => {
+                            document.getElementById(`proof33`).classList.remove('before');
+                            document.getElementById(`proof33`).classList.remove('before2');
+                            document.getElementById(`proof30`).classList.remove('next2UP');
+                            document.getElementById(`proof30`).classList.add('nextUP');
+                            document.getElementById(`proof33`).classList.add('next2');
+                    
+                        }, 22000);
+                            
+                    }, 1300);
+                }, 27000);
+            }
+
+        break
 
         case "proof38":
             const containerProof39TexUno = document.querySelector(".containerProof39TexUno")

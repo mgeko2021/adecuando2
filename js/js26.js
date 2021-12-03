@@ -9,8 +9,38 @@ let recorrio = false
 
 let grado = document.getElementById("grado")
 
+let ref26c1bool = false
+let ref26c2bool = false
+let ref26c3bool = false
+
+let ref26dbool = false
+
+
+// proof 26
+var ref26c1 = new Audio();
+ref26c1.src="./sonidos/Pagina15/15c1.mp3";
+
+var ref26c2 = new Audio();
+ref26c2.src="./sonidos/Pagina15/15c2.mp3";
+
+var ref26c3 = new Audio();
+ref26c3.src="./sonidos/Pagina15/15c3.mp3";
+
+var ref26d = new Audio();
+ref26d.src="./sonidos/Pagina15/15d.mp3";
+
+var ref26e = new Audio();
+ref26e.src="./sonidos/Pagina15/15e.mp3";
+
 
 let transition26uno = () =>{
+    if(!ref26c1bool){
+        ref26c1.play()
+        setTimeout(() => {
+            document.getElementById("btn26").style.display = "block"
+        }, 17000);
+        ref26c1bool == true
+    }
     let consanguinidad26 = document.getElementById("consanguinidad26")
     consanguinidad26.classList.add("next2")
 }
@@ -18,7 +48,14 @@ let transition26uno = () =>{
 parentezco.addEventListener("click", transition26uno)
 
 let transition26unoa = () =>{
-   
+    ref26c2bool == true
+    if(!ref26c2bool){
+        ref26c2.play()
+        ref26c2bool == true
+        setTimeout(() => {
+            document.getElementById("btn26a").style.display = "block"
+        }, 13000);
+    }
 
     let consanguinidad26 = document.getElementById("consanguinidad26")
     let consanguinidad26a = document.getElementById("consanguinidad26a")
@@ -31,7 +68,14 @@ let transition26unoa = () =>{
 btn26.addEventListener("click", transition26unoa)
 
 let transition26unob = () =>{
-
+    ref26c3bool == true
+    if(!ref26c3bool){
+        ref26c3.play()
+        ref26c3bool == true
+        setTimeout(() => {
+            document.getElementById("btn26b").style.display = "block"
+        }, 9000);
+    }
 
     let consanguinidad26a = document.getElementById("consanguinidad26a")
     let consanguinidad26b = document.getElementById("consanguinidad26b")
@@ -63,6 +107,11 @@ btn26b.addEventListener("click", transition26unobClose)
 
 
 let transition26dos = () =>{
+    if(!ref26dbool){
+        ref26dbool  == true
+        ref26d.play()
+    }
+    
     let consanguinidad26 = document.getElementById("consanguinidad26dos")
     consanguinidad26.classList.add("next2")
 }
@@ -90,9 +139,12 @@ let transition26NextDos = () =>{
             document.getElementById(`proof26`).classList.remove('next2UP');
             document.getElementById(`proof26`).classList.add('nextUP');
             document.getElementById(`proof29`).classList.add('next2');
-    
-            document.getElementById(`paginaproof29`).style.display ="block"
 
+            ref26e.play()
+
+            setTimeout(() => {
+                document.getElementById(`paginaproof29`).style.display ="block"    
+            }, 21000);
 
         }, 1000);
     }

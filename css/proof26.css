@@ -235,6 +235,7 @@
 }
 
 .btn26 {
+    display: none;
     border: none;
     background: #691212;
     -webkit-transform: skew(-20deg);
@@ -396,7 +397,6 @@
 }
 
 .btn26dos {
-    border: none;
     background: #691212;
     -webkit-transform: skew(-20deg);
     -moz-transform: skew(-20deg);
@@ -415,6 +415,21 @@
 .btn26dos:hover {
     background: #c22121;
 }
+
+/* ------hidden btns------- */
+
+#btn26{
+    display: none;
+}
+
+#btn26a{
+    display: none;
+}
+#btn26b{
+    display: none;
+}
+
+
 
 .grados26dos{
     display: grid;

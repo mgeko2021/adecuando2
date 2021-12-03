@@ -74,11 +74,16 @@ let answer21 = () =>{
                         setTimeout(() => {
                             subtituleProof24B.classList.add("transicion24RigthReturn")
                         }, 200);
+
+                        // proof 24
+                        var ref15a = new Audio();
+                        ref15a.src="./sonidos/Pagina15/pagina15a.mp3";
+                        ref15a.play()
+                        setTimeout(() => {
+                            document.getElementById(`paginaproof24`).style.display ="block"
+                        }, 18000);
                         
-                        document.getElementById(`paginaproof24`).style.display ="block"
-        
-                        
-                    }, 2000);
+                    }, 27000);
 
             }, 4000);
                 
@@ -103,6 +108,13 @@ let answer21 = () =>{
                 document.getElementById(`proof21`).style.left = "0%"
                 document.getElementById(`proof21`).classList.add('nextUP');
                 document.getElementById(`proof24`).classList.add('next2UP');
+
+                 // proof 24
+                 var ref14 = new Audio();
+                 ref14.src="./sonidos/Pagina14/pagina14.mp3";
+                 ref14.play()
+           
+ 
 
     
             }, 6000);

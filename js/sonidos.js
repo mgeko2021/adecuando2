@@ -43,6 +43,14 @@ ref17.src="./sonidos/Pagina11/pagina11.mp3";
 var ref21 = new Audio();
 ref21.src="./sonidos/Pagina13/pagina13.mp3";
 
+// proof 24
+var ref24 = new Audio();
+ref24.src="./sonidos/Pagina15/15b.mp3";
+
+
+// proof 30
+var ref30 = new Audio();
+ref30.src="./sonidos/Pagina16/pagina16.mp3";
 
 
 
@@ -75,7 +83,8 @@ let proof13bool = false
 let proof17bool = false
 let proof18bool = false
 let proof21bool = false
-let prof24bool = false
+let proof24bool = false
+let proof29bool = false
 let proof30bool = false
 
 let proof36bool = false
@@ -282,8 +291,8 @@ let sonidoNext = (name, nextName,nextName2) => {
         
         
         case "proof18": //pista nivles vistos
-        ref21.play()
         if(!proof18bool){
+                 ref21.play()
                 document.getElementById(`pagina${nextName}`).style.display ="none"
                 document.getElementById(`pagina${nextName2}`).style.display ="none"
                 proof18bool = true
@@ -294,28 +303,44 @@ let sonidoNext = (name, nextName,nextName2) => {
         
             
         case "proof24": // ele juego de arratrar
-        if(!prof24bool){
+        if(!proof24bool){
+            ref24.play()
+            proof24bool == true
             document.getElementById(`pagina${nextName}`).style.display ="none"
-            prof24bool = true
+            
+            document.getElementById("parentezco").disabled = true
+            document.getElementById("parentezco").classList.remove("clasegover")
+            setTimeout(() => {
+                document.getElementById("parentezco").disabled = false
+                document.getElementById("parentezco").classList.add("clasegover")
+            }, 11000);
+
+            
         } else {
             document.getElementById(`pagina${nextName}`).style.display ="block"
         }
             break;
 
         case "proof29":  //modificar
-                document.getElementById(`pagina${nextName}`).style.display ="block"
-                document.getElementById(`pagina${name}`).style.display ="none"
-            break;
-
-        case "proof30":
-            if(!proof30bool){
+            if(!proof29bool){
+                ref30.play()
                 document.getElementById(`pagina${nextName}`).style.display ="none"
                 document.getElementById(`pagina${nextName2}`).style.display ="none"
-                proof30bool = true
+                proof29bool = true
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
-            }
-            break;
+                document.getElementById(`pagina${name}`).style.display ="none"            }
+            break;            
+
+        // case "proof30":
+        //     if(!proof30bool){
+        //         document.getElementById(`pagina${nextName}`).style.display ="none"
+        //         document.getElementById(`pagina${nextName2}`).style.display ="none"
+        //         proof30bool = true
+        //     } else {
+        //         document.getElementById(`pagina${nextName}`).style.display ="block"
+        //     }
+        //     break;
 
 
         case "proof32": // listo

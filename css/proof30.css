@@ -52,9 +52,20 @@
 }
 
 .containerProof30Text{
+    position: absolute;
+    top: 27%;
+    left: 5%;
     text-align: left;
-    margin-top: 17%;
 }
+
+.containerProof30Text2{
+    display: none;
+    top: 23%;
+    left: 5%;
+    position: absolute;
+    text-align: left;
+}
+
 
 #proof30Img{
     width: 43rem;
