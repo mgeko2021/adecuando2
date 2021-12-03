@@ -2,6 +2,7 @@ let btnNextBuild = document.querySelectorAll('body button.nextBtn')
 
 // documentos 
 
+let ready16 = false
 let ready21 = false
 let ready30 = false
 let ready39 = false
@@ -111,6 +112,20 @@ let build = (name, nextName, nextName2) =>{
         case "proof3a":
             let adelanteProof4 = document.getElementById("adelanteProof4")
             adelanteProof4.classList.add("topmenos100animate")
+            
+
+            
+            break;
+
+        case "proof15":
+            if(!ready16){
+                ready16 = true
+                setTimeout(() => {
+                    let containerProof16 = document.querySelector(".containerProof16")
+                    containerProof16.classList.add("next2")
+                }, 12000);
+    
+            }
             
 
             

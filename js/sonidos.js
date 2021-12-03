@@ -14,6 +14,8 @@ ref1.src="./sonidos/Pagina2/pagina2.mp3";
 
 
 
+
+
 // proof 3
 var ref3 = new Audio();
 ref3.src="./sonidos/Pagina4/pagina4.mp3";
@@ -96,6 +98,7 @@ let proof24bool = false
 let proof29bool = false
 let proof30bool = false
 let proof32bool = false
+let proof34bool = false
 
 let proof36bool = false
 let proof36abool = false
@@ -177,6 +180,9 @@ let sonidoNext = (name, nextName,nextName2) => {
             if(!proof0bool){
                 ref1.play()
                 proof0bool = true
+                setTimeout(() => {
+                    document.getElementById(`pagina${name}`).style.display ="block"    
+                }, 56000);
 
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
@@ -187,11 +193,16 @@ let sonidoNext = (name, nextName,nextName2) => {
 
         case "proof2": // subir lucho
         if(!proof2bool){
-            ref3.play()
-            proof2bool = true
-                setTimeout(() => {
+            // ref3.play()
+            document.getElementById("videoProof3").play()
+            setTimeout(() => {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
-                }, 51000);
+                document.getElementById(`pagina${name}`).style.display ="none"
+                document.getElementById("videoProof3").style.display = "none"
+                document.getElementById("videoProof3dos").style.display = "block"
+                
+            }, 55000);
+            proof2bool = true
 
         } else {
             document.getElementById(`pagina${nextName}`).style.display ="block"
@@ -379,12 +390,23 @@ let sonidoNext = (name, nextName,nextName2) => {
             break;
 
         case "proof34":
-            document.getElementById(`pagina${nextName}`).style.display ="block"
-            document.getElementById(`pagina${name}`).style.display ="none"
+            if(!proof34bool){
+                proof34bool = true
+                document.getElementById("videoProof36").play()
+                document.getElementById(`pagina${nextName}`).style.display ="block"
+                document.getElementById(`pagina${name}`).style.display ="none"
+    
+            } else {
+                document.getElementById(`pagina${nextName}`).style.display ="block"
+                document.getElementById(`pagina${name}`).style.display ="none"
+                    
+            }
+            
             break;
 
         case "proof36": // listo
             if(!proof36bool){
+                document.getElementById("videoProof36").pause()
                 ref36a.play()
                 setTimeout(() => {
                     document.getElementById(`pagina${nextName}`).style.display ="block"

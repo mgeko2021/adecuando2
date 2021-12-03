@@ -106,7 +106,7 @@ btn26b.addEventListener("click", transition26unobClose)
 
 let transition26dos = () =>{
     if(!ref26dbool){
-        ref26dbool  == true
+        ref26dbool  = true
         ref26d.play()
         setTimeout(() => {
             btn26dos.style.display = "block" 

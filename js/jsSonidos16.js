@@ -18,41 +18,94 @@ var ref16 = new Audio();
 ref16.src="./sonidos/Pagina10/pagina10.mp3";
 
 
+
+
 console.log(productServSon16)
+
+let video16uno = document.querySelector(".video16uno")
+let video16dos = document.querySelector(".video16dos")
+let video16tres = document.querySelector(".video16tres")
 
 const sonidoproductServSon16 = (name) =>{
     console.log(name)
 
     switch (name) {
         case "sol16a":
-            ref16_a.play()
-            click16a = true
+            video16dos.classList.remove("next2")
+            video16tres.classList.remove("next2")
 
-            ref16_b.pause()
-            ref16_c.pause()
+            video16uno.classList.add("next2")
+            document.getElementById("videoProof16PEP1").play()
+
+            if(!click16a){
+                click16a = true
+                setTimeout(() => {
+                    document.getElementById("btn16returnone").style.display = "block"
+                    // document.getElementById("videoProof16PEP1").style.display = "none"
+                    // document.getElementById("videoProof16PEP1show").style.display = "block"
+
+                }, 52000);
+            } else {
+                document.getElementById("btn16returnone").style.display = "block"
+            }
+
+            document.getElementById("videoProof16PEP2").pause()
+            document.getElementById("videoProof16PEP3").pause()
             ref16.pause()
             break;
 
 
-    
+
         case "sol16b":
-            click16b = true
-            ref16_b.play()
 
-            ref16_a.pause()
-            ref16_c.pause()
+            video16tres.classList.remove("next2")
+            video16uno.classList.remove("next2")
+
+            video16dos.classList.add("next2")
+            document.getElementById("videoProof16PEP2").play()
+            if(!click16b){
+                click16b = true
+                setTimeout(() => {
+                    document.getElementById("btn16returnall").style.display = "block"
+                    // document.getElementById("videoProof16PEP2").style.display = "none"
+                    // document.getElementById("videoProof16PEP2show").style.display = "block"
+
+                }, 20000);
+            } else{
+                document.getElementById("btn16returnall").style.display = "block"
+            }
+
+            document.getElementById("videoProof16PEP3").pause()
+            document.getElementById("videoProof16PEP1").pause()
             ref16.pause()
             break;
-   
+
         case "sol16c":
-            click16c = true
-            ref16_c.play()
 
-            ref16_a.pause()
-            ref16_b.pause()
+            video16uno.classList.remove("next2")
+            video16dos.classList.remove("next2")
+
+            video16tres.classList.add("next2")
+            document.getElementById("videoProof16PEP3").play()
+
+            if(!click16c){
+                click16c = true
+                setTimeout(() => {
+                    document.getElementById("btn16returnall").style.display = "block"
+                    // document.getElementById("videoProof16PEP3").style.display = "none"
+                    // document.getElementById("videoProof16PEP3show").style.display = "block"
+
+                }, 52000);
+            } else {
+                document.getElementById("btn16returnall").style.display = "block"
+            }
+
+
+            document.getElementById("videoProof16PEP2").pause()
+            document.getElementById("videoProof16PEP1").pause()
             ref16.pause()
             break;
-   
+
     }
 
     if(click16a && click16b && click16c  ){
@@ -68,13 +121,55 @@ productServSon16.forEach((productServSonImg, index) => {
 })
 
 
+let btn16returnall = document.getElementById("btn16returnall")
 
-let silenciarPagina16 = ()=>{
-    ref16_a.pause()
-    ref16_b.pause()
-    ref16_c.pause()
+let btn16returnone = document.getElementById("btn16returnone")
+
+let btn16return = document.getElementById("btn16return")
+
+let siguiente1_16 = () =>{
+    video16dos.classList.remove("next2")
+    video16tres.classList.remove("next2")
+    document.getElementById("videoProof16PEP2").pause()
+    document.getElementById("videoProof16PEP3").pause()
+    setTimeout(() => {
+        document.getElementById("btn16returnall").style.display = "none"
+    }, 300);
+
 }
 
+btn16returnall.addEventListener("click",siguiente1_16)
+
+let siguiente1_16one = () =>{
+
+    document.getElementById("consanguinidad16").classList.remove("next2")
+    document.getElementById("consanguinidad16").classList.add("next2")
+
+    video16uno.classList.remove("next2")
+    video16uno.classList.add("next")
+
+    document.getElementById("videoProof16PEP1").pause()
+    document.getElementById("btn16returnone").style.display = "none"
+
+}
+
+btn16returnone.addEventListener("click",siguiente1_16one)
+
+
+let close_one = () =>{
+
+    document.getElementById("consanguinidad16").classList.remove("next2")
+
+}
+
+btn16return.addEventListener("click",close_one)
+
+
+let silenciarPagina16 = ()=>{
+    document.getElementById("videoProof16PEP1").pause()
+    document.getElementById("videoProof16PEP2").pause()
+    document.getElementById("videoProof16PEP3").pause()
+}
 
 document.getElementById(`paginaproof16`).addEventListener("click",silenciarPagina16)
 
