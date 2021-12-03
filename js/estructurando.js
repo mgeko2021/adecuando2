@@ -6,10 +6,10 @@ let ready21 = false
 let ready30 = false
 
 
-// proof 24
-var ref30 = new Audio();
-ref30.src="./sonidos/Pagina16/pagina16.mp3";
 
+// proof 30
+var ref33 = new Audio();
+ref33.src="./sonidos/Pagina17/pagina17.mp3";
 
 
 let build = (name, nextName, nextName2) =>{
@@ -135,7 +135,6 @@ let build = (name, nextName, nextName2) =>{
         case "proof29":
                         
             if(!ready30){
-                ref30.play()
                 ready30 = true
                 setTimeout(() => {
                     const containerProof30Text = document.querySelector(".containerProof30Text")
@@ -151,6 +150,7 @@ let build = (name, nextName, nextName2) =>{
                         containerProof30Text2.classList.add("opacityanimate")
 
                         setTimeout(() => {
+                            ref33.play()
                             document.getElementById(`proof33`).classList.remove('before');
                             document.getElementById(`proof33`).classList.remove('before2');
                             document.getElementById(`proof30`).classList.remove('next2UP');

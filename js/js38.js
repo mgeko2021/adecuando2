@@ -23,6 +23,7 @@ let letterShot = (id) => {
         }, 4000);
 
         setTimeout(() => {
+            ref37.pause()
             document.getElementById(`proof38`).classList.remove('beforeUP');
             document.getElementById(`proof39`).classList.remove('beforeUP');
             document.getElementById(`proof39`).classList.remove('before2UP');

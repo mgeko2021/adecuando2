@@ -52,6 +52,10 @@ ref24.src="./sonidos/Pagina15/15b.mp3";
 var ref30 = new Audio();
 ref30.src="./sonidos/Pagina16/pagina16.mp3";
 
+// proof 30
+var ref37 = new Audio();
+ref37.src="./sonidos/Pagina21/Pagina21.mp3";
+
 
 
 // //sonidos 13
@@ -362,6 +366,7 @@ let sonidoNext = (name, nextName,nextName2) => {
 
         case "proof37": // listo
         if(!proof37bool){
+            ref37.play()
             document.getElementById(`pagina${nextName}`).style.display ="none"
             proof37bool = true
         } else {
