@@ -361,18 +361,18 @@ let sonidoNext = (name, nextName,nextName2) => {
         //     break;
 
 
-        case "proof32": // listo
-            if(!proof32bool){
-                ref41.play()
-                setTimeout(() => {
-                    document.getElementById(`pagina${nextName}`).style.display ="block"
-                    proof32bool = true
-                }, 24000);
-            } else {
-                document.getElementById(`pagina${nextName}`).style.display ="block"
-                document.getElementById(`pagina${name}`).style.display ="none"
-            }
-            break;
+        // case "proof32": // listo
+        //     if(!proof32bool){
+        //         ref41.play()
+        //         setTimeout(() => {
+        //             document.getElementById(`pagina${nextName}`).style.display ="block"
+        //             proof32bool = true
+        //         }, 24000);
+        //     } else {
+        //         document.getElementById(`pagina${nextName}`).style.display ="block"
+        //         document.getElementById(`pagina${name}`).style.display ="none"
+        //     }
+        //     break;
         
         case "proof33": 
                 document.getElementById(`pagina${nextName}`).style.display ="block"
