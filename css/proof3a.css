@@ -103,6 +103,29 @@
 }
 
 
-
-
+#proof3a .tituleProof3a{
+    overflow: initial;
+}
+#proof3a .tituleProof3a h3{
+    background-color: #bf2f41;
+    display: block;
+}
+#proof3a .tituleProof3a h3:before{
+    content: "";
+    border-top: 0px solid transparent;
+    border-bottom: 65px solid transparent;
+    border-right: 30px solid #bf2f41;
+    position: absolute;
+    left: -30px;
+    top: -13px;
+}
+#proof3a .tituleProof3a h3:after{
+    content: "";
+    border-top: 62px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 30px solid #bf2f41;
+    position: absolute;
+    right: -30px;
+    top: -12px;
+}
 
