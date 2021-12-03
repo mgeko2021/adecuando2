@@ -52,18 +52,23 @@ ref24.src="./sonidos/Pagina15/15b.mp3";
 var ref30 = new Audio();
 ref30.src="./sonidos/Pagina16/pagina16.mp3";
 
+// proof 36a
+var ref36a = new Audio();
+ref36a.src="./sonidos/Pagina20/pagina20a.mp3";
+
+// proof 36b
+var ref36b = new Audio();
+ref36b.src="./sonidos/Pagina20/pagina20b.mp3";
+
 // proof 30
 var ref37 = new Audio();
 ref37.src="./sonidos/Pagina21/Pagina21.mp3";
 
+// proof 32
+var ref32 = new Audio();
+ref32.src="./sonidos/Pagina24/pagina24.mp3";
 
 
-// //sonidos 13
-// var ref13_1 = new Audio();
-// ref13_1.src="./sonidos/Referencia 12-13-14-15/REF 13-1.mp3";
-
-// var ref13_2 = new Audio();
-// ref13_2.src="./sonidos/Referencia 12-13-14-15/REF 13-2.mp3";
 
 
 let startbool = false
@@ -90,12 +95,15 @@ let proof21bool = false
 let proof24bool = false
 let proof29bool = false
 let proof30bool = false
+let proof32bool = false
 
 let proof36bool = false
+let proof36abool = false
 
 let proof37bool = false
 
 let proof39bool = false
+let proof39abool = false
 
 let proof41bool = false
 
@@ -161,6 +169,7 @@ let sonidoNext = (name, nextName,nextName2) => {
                 }, 12000);
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
+                document.getElementById(`pagina${name}`).style.display ="none"
             }
             break
 
@@ -213,6 +222,7 @@ let sonidoNext = (name, nextName,nextName2) => {
             // }, 14000);
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
+                document.getElementById(`pagina${name}`).style.display ="none"
             }
 
             break;
@@ -226,6 +236,7 @@ let sonidoNext = (name, nextName,nextName2) => {
             // }, 53000);
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
+                document.getElementById(`pagina${name}`).style.display ="none"
             }
 
             break;
@@ -242,10 +253,11 @@ let sonidoNext = (name, nextName,nextName2) => {
             // setTimeout(() => {
                 ref8.play()
             //     document.getElementById(`pagina${nextName}`).style.display ="block"
-            //     proof8bool = true
+                proof8bool = true
             // }, 53000);
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
+                document.getElementById(`pagina${name}`).style.display ="none"
             }
 
             break;
@@ -259,6 +271,7 @@ let sonidoNext = (name, nextName,nextName2) => {
                 }, 50000);
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
+                document.getElementById(`pagina${name}`).style.display ="none"
             }
 
             break;
@@ -302,6 +315,7 @@ let sonidoNext = (name, nextName,nextName2) => {
                 proof18bool = true
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
+                document.getElementById(`pagina${name}`).style.display ="none"
             }
             break;
         
@@ -348,7 +362,16 @@ let sonidoNext = (name, nextName,nextName2) => {
 
 
         case "proof32": // listo
+            if(!proof32bool){
+                ref41.play()
+                setTimeout(() => {
+                    document.getElementById(`pagina${nextName}`).style.display ="block"
+                    proof32bool = true
+                }, 24000);
+            } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
+                document.getElementById(`pagina${name}`).style.display ="none"
+            }
             break;
         
         case "proof33": 
@@ -360,28 +383,64 @@ let sonidoNext = (name, nextName,nextName2) => {
             document.getElementById(`pagina${name}`).style.display ="none"
             break;
 
-        case "proof36": //listo
+        case "proof36": // listo
+            if(!proof36bool){
+                ref36a.play()
+                setTimeout(() => {
+                    document.getElementById(`pagina${nextName}`).style.display ="block"
+                    proof36bool = true
+                }, 24000);
+            } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
-            break;
+                document.getElementById(`pagina${name}`).style.display ="none"
+            }
+            break;  
+
+        case "proof36a": // listo
+            if(!proof36abool){
+                ref36b.play()
+                setTimeout(() => {
+                    document.getElementById(`pagina${nextName}`).style.display ="block"
+                    proof36abool = true
+                }, 4000);
+            } else {
+                document.getElementById(`pagina${nextName}`).style.display ="block"
+                document.getElementById(`pagina${name}`).style.display ="none"
+            }
+            break;  
 
         case "proof37": // listo
-        if(!proof37bool){
-            ref37.play()
-            document.getElementById(`pagina${nextName}`).style.display ="none"
-            proof37bool = true
-        } else {
-            document.getElementById(`pagina${nextName}`).style.display ="block"
-        }
-        break;           
-
+            if(!proof37bool){
+                ref37.play()
+                document.getElementById(`pagina${nextName}`).style.display ="none"
+                proof37bool = true
+            } else {
+                document.getElementById(`pagina${nextName}`).style.display ="block"
+                document.getElementById(`pagina${name}`).style.display ="none"
+            }
+            break; 
+            
         case "proof39": // listo
-        if(!proof39bool){
-            document.getElementById(`pagina${nextName}`).style.display ="none"
-            proof39bool = true
-        } else {
-            document.getElementById(`pagina${nextName}`).style.display ="block"
-        }
-        break;           
+            if(!proof39bool){
+                document.getElementById(`pagina${nextName}`).style.display ="none"
+                proof39bool = true
+            } else {
+                document.getElementById(`pagina${nextName}`).style.display ="block"
+                document.getElementById(`pagina${name}`).style.display ="none"
+            }
+            break;
+
+        case "proof39a": // listo
+            if(!proof39abool){
+                ref32.play()
+                document.getElementById(`pagina${nextName}`).style.display ="none"
+                proof39abool = true
+            } else {
+                document.getElementById(`pagina${nextName}`).style.display ="block"
+                document.getElementById(`pagina${name}`).style.display ="none"
+            }
+            break;           
+            
 
  
         default:

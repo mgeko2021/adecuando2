@@ -25,7 +25,9 @@
 @import url(/css/proof33.css);
 @import url(/css/proof34.css);
 @import url(/css/proof36.css);
+@import url(/css/proof36a.css);
 @import url(/css/proof37.css);
+@import url(/css/proof39a.css);
 @import url(/css/proof38.css);
 @import url(/css/proof39.css);
 @import url(/css/proof40.css);
@@ -360,6 +362,9 @@ body {
     display: none;
 }
 #paginaproof39{
+    display: none;
+}
+#paginaproof39a{
     display: none;
 }
 #paginaproof40{

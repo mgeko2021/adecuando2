@@ -2,7 +2,6 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
-    z-index:1;
     top: 100%;
     /* top: 0%; */
 
@@ -19,4 +18,17 @@
 
 .titule36a{
     position: absolute;
+    width: 70%;
+    top: 20%;
+    left: 5%;
+    text-align: left;
+
+}
+
+.titule36a h3{
+    font-size: 4rem;
+}
+
+.titule36a p{
+    line-height: 1.8rem;
 }

@@ -4,12 +4,26 @@ let btnNextBuild = document.querySelectorAll('body button.nextBtn')
 
 let ready21 = false
 let ready30 = false
+let ready39 = false
+let ready39a = false
 
 
 
 // proof 30
 var ref33 = new Audio();
 ref33.src="./sonidos/Pagina17/pagina17.mp3";
+
+// proof 30
+var ref39 = new Audio();
+ref39.src="./sonidos/Pagina22/pagina22.mp3";
+
+// proof 39a
+var ref39a = new Audio();
+ref39a.src="./sonidos/Pagina23/pagina23.mp3";
+
+// proof 39
+var ref39b = new Audio();
+ref39b.src="./sonidos/Pagina23/23b.mp3";
 
 
 let build = (name, nextName, nextName2) =>{
@@ -163,27 +177,20 @@ let build = (name, nextName, nextName2) =>{
                 }, 27000);
             }
 
-        break
+            break
 
-        case "proof38":
-            const containerProof39TexUno = document.querySelector(".containerProof39TexUno")
-            const containerProof39TexDos = document.querySelector(".containerProof39TexDos")
-        
-            let medio39 = document.getElementById("medio39") 
-            let adelante39 = document.getElementById("adelante39") 
-            let fondo39 = document.getElementById("fondo39") 
-        
-            medio39.classList.add("translatefastleft39")
-            fondo39.classList.add("translatefastrigth39")
-            adelante39.classList.add("translatefasfront39")
-        
-            containerProof39TexUno.classList.add("opacityanimateinverse")
-            setTimeout(() => {
-                containerProof39TexUno.style.display = "none"
-                containerProof39TexDos.style.display = "block"
-                containerProof39TexDos.classList.add("opacityanimate")
-        
-            }, 2000);
+        case "proof39":
+            if(!ready39a){
+                ref39a.play()
+                ready39a = true
+                setTimeout(() => {
+                    document.querySelector(".move39dos").classList.add("next2")
+                    ref39b.play()
+                    setTimeout(() => {
+                        document.getElementById(`paginaproof39a`).style.display ="block"
+                    }, 63000);
+                }, 17000);
+            }
 
         break
     

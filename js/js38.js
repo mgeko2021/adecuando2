@@ -1,6 +1,9 @@
 let btnLetter = document.querySelectorAll('.letterShoot')
 let terminadoJuego38 = false
 
+var ref39 = new Audio();
+ref39.src="./sonidos/Pagina22/pagina22.mp3";
+
 let letterShot = (id) => { 
 
     let puntos38 = document.getElementById("puntos38ID")
@@ -32,7 +35,35 @@ let letterShot = (id) => {
             document.getElementById(`proof38`).classList.add('nextUP');
             document.getElementById(`proof39`).classList.add('next2UP');
 
-            document.getElementById(`paginaproof39`).style.display ="block"
+            // document.getElementById(`paginaproof39`).style.display ="block"
+
+            ref39.play()
+            setTimeout(() => {
+    
+                const tituleProof39 = document.querySelector(".tituleProof39")
+                const containerProof39TexUno = document.querySelector(".containerProof39TexUno")
+                const containerProof39TexDos = document.querySelector(".containerProof39TexDos")
+        
+                let medio39 = document.getElementById("medio39") 
+                let adelante39 = document.getElementById("adelante39") 
+                let fondo39 = document.getElementById("fondo39") 
+        
+                medio39.classList.add("translatefastleft39")
+                fondo39.classList.add("translatefastrigth39")
+                adelante39.classList.add("translatefasfront39")
+        
+                containerProof39TexUno.classList.add("opacityanimateinverse")
+                setTimeout(() => {
+                    containerProof39TexUno.style.display = "none"
+                    containerProof39TexDos.style.display = "block"
+                    containerProof39TexDos.classList.add("opacityanimate")
+        
+                    tituleProof39.style.display = "block"
+                    btn39.style.display = "block"
+                    tituleProof39.classList.add("opacityanimate")
+        
+                }, 2000);
+            }, 7000);
 
         }, 6000);
 

@@ -176,7 +176,7 @@ let transitionNext = (name, nextName, nextName2) => {
         case "proof26": //29
         case "proof30": //33
         case "proof37": //38
-        case "proof39"://39
+        case "proof39a"://39
         case "proof40"://40
             document.getElementById(`${name}`).classList.remove('beforeUP');
             document.getElementById(`${nextName}`).classList.remove('before');
@@ -283,7 +283,7 @@ let transitionBefore = (name, beforeName) => {
             case "proof26": //29
             case "proof30": //33
             case "proof37": //38
-            case "proof39"://39
+            case "proof39a"://39
             case "proof40"://40
             document.getElementById(`${name}`).classList.remove('before2UP');
             document.getElementById(`${name}`).classList.remove('beforeUP');

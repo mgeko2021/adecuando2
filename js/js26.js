@@ -36,10 +36,10 @@ ref26e.src="./sonidos/Pagina15/15e.mp3";
 let transition26uno = () =>{
     if(!ref26c1bool){
         ref26c1.play()
+        ref26c1bool = true
         setTimeout(() => {
             document.getElementById("btn26").style.display = "block"
         }, 17000);
-        ref26c1bool == true
     }
     let consanguinidad26 = document.getElementById("consanguinidad26")
     consanguinidad26.classList.add("next2")
@@ -48,10 +48,9 @@ let transition26uno = () =>{
 parentezco.addEventListener("click", transition26uno)
 
 let transition26unoa = () =>{
-    ref26c2bool == true
     if(!ref26c2bool){
         ref26c2.play()
-        ref26c2bool == true
+        ref26c2bool = true
         setTimeout(() => {
             document.getElementById("btn26a").style.display = "block"
         }, 13000);
@@ -68,10 +67,9 @@ let transition26unoa = () =>{
 btn26.addEventListener("click", transition26unoa)
 
 let transition26unob = () =>{
-    ref26c3bool == true
     if(!ref26c3bool){
         ref26c3.play()
-        ref26c3bool == true
+        ref26c3bool = true
         setTimeout(() => {
             document.getElementById("btn26b").style.display = "block"
         }, 9000);
@@ -110,6 +108,9 @@ let transition26dos = () =>{
     if(!ref26dbool){
         ref26dbool  == true
         ref26d.play()
+        setTimeout(() => {
+            btn26dos.style.display = "block" 
+        }, 28000);
     }
     
     let consanguinidad26 = document.getElementById("consanguinidad26dos")

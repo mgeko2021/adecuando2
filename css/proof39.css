@@ -19,10 +19,35 @@
     text-align: left;
 }
 
+/* ------titulo a------ */
+.containerProof39TexUno{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    /* display: none; */
+}
+
+.containerProof39TexUno h3{
+    font-size: 2.7rem;
+    line-height: 2.2rem;
+}
+
+.containerProof39TexUno b{
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin: 0;
+}
+
+.containerProof39TexUno p{
+    line-height: 1.5rem;
+}
+
+/* ------titulo b------ */
 .tituleProof39{
     position: absolute;
     top: 16%;
     left: 5%;
+    display: none;
 }
 
 .tituleProof39 h3{
@@ -37,18 +62,6 @@
     margin-bottom: 1rem;
 }
 
-.containerProof39TexUno{
-    position: absolute;
-    display: flex;
-    top: 43%;
-    justify-content: space-between;
-    left: 5%;
-}
-
-.containerProof39TexUno p{
-    font-size: 1.7rem;
-    line-height: 1.9rem;
-}
 
 .containerProof39TexDos{
     position: absolute;
@@ -56,6 +69,8 @@
     top: 43%;
     justify-content: space-between;
     left: 5%;
+    display: none;
+
 
 }
 
@@ -64,7 +79,45 @@
     left: -20%;
 }
 
-.containerProof39TexDos{
+.presentacion39 button{
+    position: absolute;
+}
+
+
+.btn39 {
     display: none;
+    border: none;
+    background: #691212;
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -ms-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    transform: skew(-20deg);
+    color: white;
+    font-weight: 900;
+    font-size: 1.7rem;
+    position: relative;
+    padding: 0.1rem 1rem;
+    z-index: 100;
+    margin-left: 2rem;
+    position: absolute;
+    top: 85%;
+}
+
+.btn39 p{
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    transform: skew(20deg);
+}
+
+.containerProof39TexTres{
+    position: absolute;
+    display: flex;
+    top: 43%;
+    left: 5%;
+    display: none;
+
 }
 
