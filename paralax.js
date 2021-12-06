@@ -43,3 +43,23 @@ let proof1ParalaxOut = () =>{
 
 
 start.addEventListener("mouseout",proof1ParalaxOut)
+
+
+
+let bodys = document.getElementById("body")
+
+
+let  move3d = (e) =>{
+    let adelante = document.getElementById("adelante")
+    let centerX = e.clientX -475
+
+    let moveX = ((475/clientX)-20)
+
+    // adelante.style.transform = "translate3d(0px, 0.67849px, 0px)"
+    adelante.style.transform = `translate3d(${centerX + moveX}px,0px, 0px)`
+    console.log(`${e.clientX} en x`)
+    console.log(`${e.clientY} en y`)
+
+}
+
+bodys.addEventListener("mousemove", move3d)
