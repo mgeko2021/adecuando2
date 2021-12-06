@@ -51,7 +51,9 @@ p{
     margin: 0 !important;
     line-height: 2rem;
 }
-
+#proof41 .tituleProof41 p{
+    line-height: 6rem;
+}
 .back {
     position: absolute;
     width: 100vw;

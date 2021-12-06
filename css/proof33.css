@@ -149,11 +149,12 @@
     padding: 0.1rem 0.2rem 0.2rem 1rem;
     width: 88%;
     border-radius: 0.3rem;
+    line-height: 1.7rem;
 }
 
 .gameHuntMove33 img{
     width: 100%;
-    cursor: crosshair;
+    cursor: pointer;
 }
 
 .contenedorPieza33{
