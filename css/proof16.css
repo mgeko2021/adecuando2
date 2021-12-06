@@ -4,7 +4,7 @@
     height: 100vh;
     left: 100%;
     background-size: 100% 100%;
-     top: 0%;
+    top: 0%;
     /* left: 0%; */
 
 }
@@ -88,17 +88,49 @@
 #PEP1{
     width: 13rem;
     margin-bottom: 0.8rem;
+    animation: float 4s ease-in-out infinite;
 }
 #PEP2{
     margin-top: 1.2rem;
     width: 18rem;
     margin-bottom: 0.8rem;
+    animation: float2 4s ease-in-out infinite;
 }
 #PEP3{
     margin-top: 1.3rem;
     width: 23rem;
     margin-left: 8rem;
     margin-bottom: 0.8rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		/* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+		transform: translatey(0px);
+	}
+	50% {
+		/* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2); */
+		transform: translatey(-20px);
+	}
+	100% {
+		/* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+		transform: translatey(0px);
+	}
+}
+@keyframes float2 {
+	0% {
+		/* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+		transform: translatey(-20px);
+	}
+	50% {
+		/* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2); */
+		transform: translatey(0px);
+	}
+	100% {
+		/* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+		transform: translatey(-20px);
+	}
 }
 
 /* ----emergente--------- */

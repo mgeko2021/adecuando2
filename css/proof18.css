@@ -99,6 +99,7 @@
     cursor: pointer;
     z-index: 100;
     width: 10rem;
+    transition: ease-in-out all 250ms;
 }
 
 #rigth{
@@ -108,8 +109,12 @@
     cursor: pointer;
     z-index: 100;
     width: 10rem;
+    transition: ease-in-out all 250ms;
 }
-
+#proof18 #left:hover,
+#proof18 #rigth:hover{
+    transform: scale(.7);
+}
 
 .moveLeft4{
     animation: moveLeft4 1s ease-in-out ;
