@@ -67,6 +67,24 @@
     display: none;
 }
 
+#hand2{
+    position: absolute;
+    right: 5%;
+    bottom: -7rem;
+}
+
+#titulea1{
+    position: absolute;
+    top: 29%;
+    left: 23%;
+}
+
+#titulea2{
+    position: absolute;
+    top: 38%;
+    width: 17rem;
+    left: 8%;
+}
 
   
 
