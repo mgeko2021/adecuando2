@@ -3,6 +3,13 @@
  * 
 * Función que se ejecuta al arrastrar el elemento. 
 **/
+var refexito = new Audio();
+refexito.src="./sonidos/EXITO_DINAMICAS.mp3";
+
+var refnoexito = new Audio();
+refnoexito.src="./sonidos/ERROR_DINAMICAS.mp3";
+
+
 function start2(e) {
     e.dataTransfer.effecAllowed = 'move'; // Define el efecto como mover (Es el por defecto)
     e.dataTransfer.setData("Text", e.target.id); // Coje el elemento que se va a mover
@@ -118,6 +125,8 @@ console.log()
             localStorage.setItem("puntuacion6", 10);
             puntos6.classList.remove("emergentesreturn");
             puntos6.classList.add("emergentes"); 
+            refexito.play()
+
             setTimeout(function(){ 
                 puntos6.classList.remove("emergentes");
                 puntos6.classList.add("emergentesreturn");
@@ -135,6 +144,7 @@ console.log()
                 // document.getElementById(proof6).style.left = "0%"
                 document.getElementById(`proof6`).classList.add('nextUP');
                 document.getElementById(`proof8`).classList.add('next2UP');
+
 
 
 
@@ -188,9 +198,12 @@ console.log()
 
             nopuntos6.classList.remove("emergentesreturn");
             nopuntos6.classList.add("emergentes"); 
+            refnoexito.play()
+
             setTimeout(function(){ 
                 nopuntos6.classList.remove("emergentes");
                 nopuntos6.classList.add("emergentesreturn");
+
                 // paginaproof26.style.display = "block" 
                 // terminadoJuego = true
             }, 4000);

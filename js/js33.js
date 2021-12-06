@@ -1,4 +1,8 @@
+var refexito = new Audio();
+refexito.src="./sonidos/EXITO_DINAMICAS.mp3";
 
+var refnoexito = new Audio();
+refnoexito.src="./sonidos/ERROR_DINAMICAS.mp3";
 
 /**
  * 
@@ -213,6 +217,7 @@ ref34b.src="./sonidos/Pagina18/18b.mp3";
         
         puntos6.classList.remove("emergentesreturn");
         puntos6.classList.add("emergentes"); 
+        refexito.play()
   
         setTimeout(() => {
             puntos6.classList.remove("emergentes");
@@ -265,6 +270,7 @@ ref34b.src="./sonidos/Pagina18/18b.mp3";
       else {
         nopuntos6.classList.remove("emergentesreturn");
         nopuntos6.classList.add("emergentes"); 
+        refnoexito
         setTimeout(function(){ 
             if(juego1 == false){
                 contenedorPieza331.style.background = "#ea0043"
