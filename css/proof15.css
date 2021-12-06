@@ -70,3 +70,34 @@
 .ruta{
     margin-bottom: 1rem;
 }
+
+
+
+#proof15 .tituleProof15{
+    overflow: initial;
+}
+#proof15 .tituleProof15 h3{
+    background-color: #bf2f41;
+    width: 280px;
+    margin: auto;
+    position: relative;
+    overflow: initial;
+}
+#proof15 .tituleProof15 h3:before{
+    content: "";
+    border-top: 0px solid transparent;
+    border-bottom: 55px solid transparent;
+    border-right: 30px solid #bf2f41;
+    position: absolute;
+    left: -30px;
+    top: 0px;
+}
+#proof15 .tituleProof15 h3:after{
+    content: "";
+    border-top: 55px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 30px solid #bf2f41;
+    position: absolute;
+    right: -30px;
+    top: 0px;
+}

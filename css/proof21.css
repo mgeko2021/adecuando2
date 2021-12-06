@@ -224,4 +224,35 @@
 
 
 
-
+#proof21 .tituleProof21{
+    overflow: initial;
+}
+#proof21 .tituleProof21 h3{
+    background-color: #bf2f41;
+    width: 550px;
+    margin: auto;
+    position: relative;
+    overflow: initial;
+    margin-top: -15px;
+}
+#proof21 .tituleProof21 h3:before{
+    content: "";
+    border-top: 0px solid transparent;
+    border-bottom: 62px solid transparent;
+    border-right: 30px solid #bf2f41;
+    position: absolute;
+    left: -30px;
+    top: 0px;
+}
+#proof21 .tituleProof21 h3:after{
+    content: "";
+    border-top: 62px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 30px solid #bf2f41;
+    position: absolute;
+    right: -30px;
+    top: 0px;
+}
+.containerProof21 {
+    top: 40%;
+}

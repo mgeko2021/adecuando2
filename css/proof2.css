@@ -2,8 +2,8 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
+    top: 0%;
     top: 100%;
-    /* top: 0%; */
     z-index: 7;
 }
 
@@ -73,3 +73,28 @@
     line-height: 1.6rem;
 }
 
+#proof2 .tituleProof2 {
+    overflow: initial;
+}
+#proof2 .tituleProof2 h3{
+    line-height: 4rem;
+    background-color: #bf2f41;
+}
+#proof2 .tituleProof2 h3:before{
+    content: "";
+    border-top: 0px solid transparent;
+    border-bottom: 52px solid transparent;
+    border-right: 30px solid #bf2f41;
+    position: absolute;
+    left: -30px;
+    bottom: 0;
+}
+#proof2 .tituleProof2 h3:after{
+    content: "";
+    border-top: 52px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 30px solid #bf2f41;
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+}
