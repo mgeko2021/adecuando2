@@ -1,6 +1,12 @@
 
 let termino32 = false
 
+var refexito = new Audio();
+refexito.src="./sonidos/EXITO_DINAMICAS.mp3";
+
+var refnoexito = new Audio();
+refnoexito.src="./sonidos/ERROR_DINAMICAS.mp3";
+
 let answer32 = () =>{
 
     // -------- mergentes--------
@@ -46,6 +52,7 @@ let answer32 = () =>{
             localStorage.setItem("puntuacion26", 10);
             puntos32.classList.remove("emergentesreturn");
             puntos32.classList.add("emergentes"); 
+            refexito.play()
             setTimeout(function(){ 
                 puntos32.classList.remove("emergentes");
                 puntos32.classList.add("emergentesreturn");
@@ -171,6 +178,7 @@ let answer32 = () =>{
 
             nopuntos32.classList.remove("emergentesreturn");
             nopuntos32.classList.add("emergentes"); 
+            refnoexito.play()
             setTimeout(function(){ 
                 nopuntos32.classList.remove("emergentes");
                 nopuntos32.classList.add("emergentesreturn");

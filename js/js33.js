@@ -222,6 +222,7 @@ ref34b.src="./sonidos/Pagina18/18b.mp3";
         setTimeout(() => {
             puntos6.classList.remove("emergentes");
             puntos6.classList.add("emergentesreturn");
+            refexito.play()
             questioncuatro.style.display = " none"
         }, 4000);
 
@@ -270,6 +271,7 @@ ref34b.src="./sonidos/Pagina18/18b.mp3";
       else {
         nopuntos6.classList.remove("emergentesreturn");
         nopuntos6.classList.add("emergentes"); 
+        refnoexito.play()
         refnoexito
         setTimeout(function(){ 
             if(juego1 == false){

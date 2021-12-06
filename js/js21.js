@@ -1,6 +1,13 @@
 
 let termino = false
 
+
+var refexito = new Audio();
+refexito.src="./sonidos/EXITO_DINAMICAS.mp3";
+
+var refnoexito = new Audio();
+refnoexito.src="./sonidos/ERROR_DINAMICAS.mp3";
+
 let answer21 = () =>{
 
     console.log("entre")
@@ -48,6 +55,7 @@ let answer21 = () =>{
             localStorage.setItem("puntuacion21", 10);
             puntos21.classList.remove("emergentesreturn");
             puntos21.classList.add("emergentes"); 
+            refexito.play()
             setTimeout(function(){ 
                 puntos21.classList.remove("emergentes");
                 puntos21.classList.add("emergentesreturn");
@@ -191,6 +199,7 @@ let answer21 = () =>{
 
             nopuntos21.classList.remove("emergentesreturn");
             nopuntos21.classList.add("emergentes"); 
+            refnoexito.play()
             setTimeout(function(){ 
                 nopuntos21.classList.remove("emergentes");
                 nopuntos21.classList.add("emergentesreturn");

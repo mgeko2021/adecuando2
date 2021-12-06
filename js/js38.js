@@ -4,6 +4,13 @@ let terminadoJuego38 = false
 var ref39 = new Audio();
 ref39.src="./sonidos/Pagina22/pagina22.mp3";
 
+var refexito = new Audio();
+refexito.src="./sonidos/EXITO_DINAMICAS.mp3";
+
+var refnoexito = new Audio();
+refnoexito.src="./sonidos/ERROR_DINAMICAS.mp3";
+
+
 let letterShot = (id) => { 
 
     let puntos38 = document.getElementById("puntos38ID")
@@ -36,6 +43,8 @@ let letterShot = (id) => {
             document.getElementById(`proof39`).classList.add('next2UP');
 
             // document.getElementById(`paginaproof39`).style.display ="block"
+
+            refexito.play()
 
             ref39.play()
             setTimeout(() => {
@@ -74,6 +83,7 @@ let letterShot = (id) => {
             
             nopuntos38.classList.remove("emergentesreturn");
             nopuntos38.classList.add("emergentes"); 
+            refnoexito.play()
             setTimeout(function(){ 
                 nopuntos38.classList.remove("emergentes");
                 nopuntos38.classList.add("emergentesreturn");
