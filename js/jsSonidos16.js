@@ -20,6 +20,7 @@ ref16.src="./sonidos/Pagina10/pagina10.mp3";
 
 
 
+
 console.log(productServSon16)
 
 let video16uno = document.querySelector(".video16uno")
@@ -44,7 +45,8 @@ const sonidoproductServSon16 = (name) =>{
                     // document.getElementById("videoProof16PEP1").style.display = "none"
                     // document.getElementById("videoProof16PEP1show").style.display = "block"
 
-                }, 52000);
+                // }, 56000);
+                }, 2000);
             } else {
                 document.getElementById("btn16returnone").style.display = "block"
             }
@@ -70,7 +72,8 @@ const sonidoproductServSon16 = (name) =>{
                     // document.getElementById("videoProof16PEP2").style.display = "none"
                     // document.getElementById("videoProof16PEP2show").style.display = "block"
 
-                }, 20000);
+                // }, 20000);
+                }, 2000);
             } else{
                 document.getElementById("btn16returnall").style.display = "block"
             }
@@ -86,6 +89,7 @@ const sonidoproductServSon16 = (name) =>{
             video16dos.classList.remove("next2")
 
             video16tres.classList.add("next2")
+
             document.getElementById("videoProof16PEP3").play()
 
             if(!click16c){
@@ -95,7 +99,8 @@ const sonidoproductServSon16 = (name) =>{
                     // document.getElementById("videoProof16PEP3").style.display = "none"
                     // document.getElementById("videoProof16PEP3show").style.display = "block"
 
-                }, 52000);
+                // }, 50000);
+                }, 2000);
             } else {
                 document.getElementById("btn16returnall").style.display = "block"
             }
@@ -109,6 +114,7 @@ const sonidoproductServSon16 = (name) =>{
     }
 
     if(click16a && click16b && click16c  ){
+        
         document.getElementById(`paginaproof16`).style.display = "block"
     }
 }

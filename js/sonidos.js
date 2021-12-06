@@ -211,6 +211,7 @@ let sonidoNext = (name, nextName,nextName2) => {
         case "proof3": //automatica vertical
             if(!auto3){
                 // setTimeout(() => {
+                    document.getElementById("videoProof3").pause()
                     ref5.play()
                     document.getElementById(`pagina${nextName}`).style.display ="none"
                     auto3 = true
