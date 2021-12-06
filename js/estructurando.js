@@ -63,10 +63,10 @@ let build = (name, nextName, nextName2) =>{
             atrasProof1.classList.add("top100animateOpacity")
             adelanteProof1.classList.add("opacityanimate")
 
-            setTimeout(() => {
-                medioProof1.classList.add("topmenos100animate")
+            // setTimeout(() => {
+            //     medioProof1.classList.add("topmenos100animate")
                 
-            }, 1000);
+            // }, 1000);
             // setTimeout(() => {
             // }, 2000);
 
