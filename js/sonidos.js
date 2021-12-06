@@ -41,6 +41,10 @@ ref16.src="./sonidos/Pagina10/pagina10.mp3";
 var ref17 = new Audio();
 ref17.src="./sonidos/Pagina11/pagina11.mp3";
 
+// proof 18
+var ref18 = new Audio();
+ref18.src="./sonidos/FONDO_SELVA.mp3";
+
 // proof 21
 var ref21 = new Audio();
 ref21.src="./sonidos/Pagina13/pagina13.mp3";
@@ -69,6 +73,10 @@ ref37.src="./sonidos/Pagina21/Pagina21.mp3";
 // proof 32
 var ref32 = new Audio();
 ref32.src="./sonidos/Pagina24/pagina24.mp3";
+
+// proof 18
+var refend = new Audio();
+refend.src="./sonidos/FONDO_SELVA2.mp3";
 
 
 
@@ -312,13 +320,15 @@ let sonidoNext = (name, nextName,nextName2) => {
         break;
     
         case "proof17": 
+            ref18.play()
             document.getElementById(`pagina${nextName}`).style.display ="block"
             document.getElementById(`pagina${name}`).style.display ="none"
         break;
         
         
         case "proof18": //pista nivles vistos
-        if(!proof18bool){
+            ref18.pause()
+            if(!proof18bool){
                  ref21.play()
                 document.getElementById(`pagina${nextName}`).style.display ="none"
                 document.getElementById(`pagina${nextName2}`).style.display ="none"
@@ -460,6 +470,19 @@ let sonidoNext = (name, nextName,nextName2) => {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
                 document.getElementById(`pagina${name}`).style.display ="none"
             }
+            break;           
+            
+
+        case "proof41": // listo
+                refend.play()
+                document.getElementById(`pagina${nextName}`).style.display ="block"
+                document.getElementById(`pagina${name}`).style.display ="none"
+            break;           
+
+        case "proof40": // listo
+                refend.pause()
+                document.getElementById(`pagina${nextName}`).style.display ="block"
+                document.getElementById(`pagina${name}`).style.display ="none"
             break;           
             
 

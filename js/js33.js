@@ -243,6 +243,7 @@ ref34b.src="./sonidos/Pagina18/18b.mp3";
 
               const containerProof34hidden = document.querySelector(".containerProof34hidden")
               const containerProof34show = document.querySelector(".containerProof34show")
+              const tituleProof34 = document.querySelector(".tituleProof34")
           
               let medioProof34 = document.getElementById("medioProof34") 
               let fondo34 = document.getElementById("fondo34") 
@@ -254,6 +255,7 @@ ref34b.src="./sonidos/Pagina18/18b.mp3";
               ref34b.play()
               containerProof34hidden.style.display = "none"
               containerProof34show.style.display = "block"
+              tituleProof34.style.display = "none"
               containerProof34show.classList.add("opacityanimate")
 
               setTimeout(() => {
