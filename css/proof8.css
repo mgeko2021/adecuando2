@@ -69,3 +69,36 @@
 #proof8Obj2{
     width: 22rem;
 }
+
+
+
+
+
+#proof8 .tituleProof8{
+    overflow: initial;
+}
+#proof8 .tituleProof8 h3{
+    background-color: #bf2f41;
+    width: 450px;
+    margin: auto;
+    position: relative;
+    overflow: initial;
+}
+#proof8 .tituleProof8 h3:before{
+    content: "";
+    border-top: 0px solid transparent;
+    border-bottom: 55px solid transparent;
+    border-right: 30px solid #bf2f41;
+    position: absolute;
+    left: -30px;
+    top: 0px;
+}
+#proof8 .tituleProof8 h3:after{
+    content: "";
+    border-top: 55px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-left: 30px solid #bf2f41;
+    position: absolute;
+    right: -30px;
+    top: 0px;
+}
