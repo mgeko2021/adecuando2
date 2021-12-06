@@ -58,51 +58,51 @@
 }
 
 #legal{
-  width:12rem;
-  margin-top: 1.5rem;
+  /* width:12rem;
+  margin-top: 0.5rem;
   margin-left: -1.5rem;
   position: absolute;
-  left: -100%;
+  left: -100%; */
     
 }
 #reputacion{
-    width:9rem;
+    /* width:9rem;
     margin-top: -0.5rem;
     position: absolute;
-    left: -100%;
+    left: -100%; */
 }
 
 #contagio{
-    width: 10rem;
+    /* width: 10rem;
     margin-top: 1.5rem;
     position: absolute;
-    left: -100%;
+    left: -100%; */
 }
 
 #operativo{
-    width:9.5rem;
+    /* width:9.5rem;
     margin-top: 2.3rem;
     position: absolute;
-    left: 100%;
+    left: 100%; */
 }
 
 #corrupcion{
-    margin-top: 2.3rem;
+    /* margin-top: 2.3rem;
     margin-left: -0.5rem;
     width:9.5rem;
     position: absolute;
-    left: 100%;
+    left: 100%; */
 }
 
 #emergente{
-    width:11.5rem;
+    /* width:11.5rem;
     margin-left: -1.2rem;
     margin-top: 3rem;
     position: absolute;
-    left: 100%;
+    left: 100%; */
 }
 
-/* ---------sondos--------- */
+/* ---------sonidos--------- */
 
 
 #sonido3a{
