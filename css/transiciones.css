@@ -29,6 +29,22 @@
     }
 }
 
+.next2nopa{
+    animation-name: next2nopa;
+    animation-duration: 1.7s;
+    /* animation-timing-function: cubic-bezier(.8,.17,0,.97); */
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes next2nopa {
+    0%{ left:100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
 
 .before{
     animation-name: before;

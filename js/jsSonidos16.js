@@ -41,9 +41,10 @@ const sonidoproductServSon16 = (name) =>{
             video16tres.classList.remove("next2")
 
             video16uno.classList.add("next2")
-            document.getElementById("videoProof16PEP1").play()
 
             if(!click16a){
+            document.getElementById("videoProof16PEP1").play()
+
 
                 document.getElementById("videoProof16PEP1").addEventListener("ended", function(){
                     document.getElementById("btn16returnone").style.display = "block"
@@ -72,8 +73,8 @@ const sonidoproductServSon16 = (name) =>{
             video16uno.classList.remove("next2")
 
             video16dos.classList.add("next2")
-            document.getElementById("videoProof16PEP2").play()
             if(!click16b){
+            document.getElementById("videoProof16PEP2").play()
                 
                 document.getElementById("videoProof16PEP2").addEventListener("ended", function(){
                     click16b = true
@@ -100,9 +101,9 @@ const sonidoproductServSon16 = (name) =>{
 
             video16tres.classList.add("next2")
 
-            document.getElementById("videoProof16PEP3").play()
 
             if(!click16c){
+                document.getElementById("videoProof16PEP3").play()
 
                 document.getElementById("videoProof16PEP3").addEventListener("ended", function(){
                     click16c = true
@@ -156,8 +157,8 @@ btn16returnall.addEventListener("click",siguiente1_16)
 
 let siguiente1_16one = () =>{
 
-    document.getElementById("consanguinidad16").classList.remove("next2")
-    document.getElementById("consanguinidad16").classList.add("next2")
+    document.getElementById("consanguinidad16").classList.remove("next2nopa")
+    document.getElementById("consanguinidad16").classList.add("next2nopa")
 
     video16uno.classList.remove("next2")
     video16uno.classList.add("next")
@@ -172,7 +173,7 @@ btn16returnone.addEventListener("click",siguiente1_16one)
 
 let close_one = () =>{
 
-    document.getElementById("consanguinidad16").classList.remove("next2")
+    document.getElementById("consanguinidad16").classList.remove("next2nopa")
 
 }
 

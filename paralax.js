@@ -40,12 +40,8 @@ let proof1ParalaxOut = () =>{
     medio.classList.add("medioOut")
     fondo1.classList.add("fondo1Out")
     setTimeout(() => {
-        palma1.classList.remove("palma1Out")
-        palma2.classList.remove("palma2Out")
-        palma3.classList.remove("palma3Out")
         medio.classList.remove("medioOut")
-        fondo1.classList.remove("fondo1Out")
-    }, 1200);
+    }, 1000);
 
 }
 
@@ -71,11 +67,13 @@ let  move3d = (e) =>{
     let atrasProof13 = document.getElementById("atrasProof13")
     let atras6 = document.getElementById("atras6")
     let adelante6 = document.getElementById("adelante6")
+    let hand2 = document.getElementById("hand2")
    
     let medioProof13 = document.getElementById("medioProof13")
     let adelanteProof13 = document.getElementById("adelanteProof13")
     let atrasProof15 = document.getElementById("atrasProof15")
     let medioProof15 = document.getElementById("medioProof15")
+    let atras17 = document.getElementById("atras17")
     let atrasProof18 = document.getElementById("atrasProof18")
     let medioProof18 = document.getElementById("medioProof18")
     let atrasProof21 = document.getElementById("atrasProof21")
@@ -134,8 +132,10 @@ let  move3d = (e) =>{
     document.getElementById("palma2").style.transform = `translate3d(${recta3 }px,${recta3y}px, 0px)`
     document.getElementById("palma3").style.transform = `translate3d(${recta4 }px,${recta4y}px, 0px)`
 
+    
     adelante.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
     medio.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
+    hand2.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     atrasProof1.style.transform = `translate3d(${recta}px,${rectay}px, 0px)`
     medioProof1.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
     medioProof00.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
@@ -149,6 +149,7 @@ let  move3d = (e) =>{
     adelanteProof13.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     atrasProof15.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     medioProof15.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
+    atras17.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
     atrasProof18.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
     medioProof18.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     atrasProof21.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
@@ -159,7 +160,7 @@ let  move3d = (e) =>{
     medioProof26.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
     atrasProof29.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
     medioProof29.style.transform = `translate3d(${recta2 }px,${recta2y}px, 0px)`
-    atrasProof30.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
+    // atrasProof30.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     atras32.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     adelante32.style.transform = `translate3d(${recta}px,${rectay}px, 0px)`
     adelanteProof30.style.transform = `translate3d(${recta}px,${rectay}px, 0px)`

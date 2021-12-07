@@ -145,6 +145,13 @@ console.log()
                 document.getElementById(`proof6`).classList.add('nextUP');
                 document.getElementById(`proof8`).classList.add('next2UP');
 
+                let tituleProof8 = document.querySelector(".tituleProof8") 
+                let containerProof8 = document.querySelector(".containerProof8") 
+
+                tituleProof8.classList.add("tituleProof8animate")
+                containerProof8.classList.add("containerProof8animate")
+            
+
 
 
 
@@ -152,6 +159,9 @@ console.log()
                 var ref8 = new Audio();
                 ref8.src="./sonidos/Pagina7/pagina7.mp3";
                 ref8.play()
+
+
+
                 setTimeout(() => {
                     document.getElementById(`paginaproof8`).style.display ="block"
                 }, 45000);

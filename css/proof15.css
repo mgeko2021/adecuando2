@@ -20,7 +20,8 @@
 
 .tituleProof15{
     position: absolute;
-    top: 20%;
+    /* top: 20%; */
+    top: -100%;
     left: 3.5rem;
     text-align: left;
 }
@@ -42,6 +43,7 @@
     width: 90%;
     align-items: center;
     top:34%;
+    left:100%;
 }
 
 .containerProof15Text{
@@ -101,3 +103,37 @@
     right: -30px;
     top: 0px;
 }
+
+.tituleProof15animate{
+    animation: tituleProof15animate 1.2s ease-in-out ;    animation-fill-mode: forwards
+    
+}
+
+
+@keyframes tituleProof15animate {
+	0% {
+        top: -100%;
+	}
+
+    100% {
+        top: 20%;
+    }
+}
+.containerProof15animate{
+    animation: containerProof15animate 1s ease-in-out ;
+    animation-fill-mode: forwards
+   
+}
+
+
+@keyframes containerProof15animate {
+	0% {
+        left: 100%;
+        /* transform: rotate(369deg); */
+	}
+
+    100% {
+        left: 5%;
+    }
+}
+

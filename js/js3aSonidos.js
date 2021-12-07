@@ -246,6 +246,37 @@ let silenciarPagina15 = ()=>{
     ref5_b.pause()
     ref5_c.pause()
     ref5_f.pause()
+    
+    let sonido3a = document.getElementById("sonido3a")
+    let sonido3b = document.getElementById("sonido3b")
+    let sonido3c = document.getElementById("sonido3c")
+    let sonido3d = document.getElementById("sonido3d")
+    let sonido3e = document.getElementById("sonido3e")
+    let sonido3f = document.getElementById("sonido3f")
+    sonido3e.style.display= "none"
+    sonido3b.style.display= "none"
+    sonido3c.style.display= "none"
+    sonido3d.style.display= "none"
+    sonido3a.style.display= "none"
+    sonido3f.style.display= "none"
+
+    let radar1 = document.querySelectorAll(".radar1")
+    let radar2 = document.querySelectorAll(".radar2")
+    let radar3 = document.querySelectorAll(".radar3")
+    let radar4 = document.querySelectorAll(".radar4")
+    let radar5 = document.querySelectorAll(".radar5")
+    let radar6 = document.querySelectorAll(".radar6")
+
+
+    for (let i = 0; i < radar6.length; i++) {
+        radar6[i].style.display= "none"
+        radar2[i].style.display= "none"
+        radar3[i].style.display= "none"
+        radar4[i].style.display= "none"
+        radar5[i].style.display= "none"
+        radar1[i].style.display= "none"
+
+    }
 
 
 }

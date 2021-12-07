@@ -3,6 +3,7 @@ let btnNextBuild = document.querySelectorAll('body button.nextBtn')
 // documentos 
 
 let ready16 = false
+let ready13 = false
 let ready21 = false
 let ready30 = false
 let ready39 = false
@@ -36,28 +37,41 @@ let build = (name, nextName, nextName2) =>{
     switch (name) {
 
         case "start":
-            let medioProof0 = document.getElementById("medioProof0")
-            let adelanteProof0 = document.getElementById("adelanteProof0")
-        
             setTimeout(() => {
-                medioProof0.style.display = "block"
-                medioProof0.classList.add("animation-proof0")    
-            }, 2000);
-            adelanteProof0.classList.add("opacityanimate")
-        
-            containerProof34hidden.classList.add("opacityanimateinverse")
-            setTimeout(() => {
-                containerProof34hidden.style.display = "none"
-                containerProof34show.style.display = "block"
-                containerProof34show.classList.add("opacityanimate")
-        
-            }, 2000);
+                let tituleProof0 = document.querySelector(".tituleProof0")
+                let containerProof0  = document.querySelector(".containerProof0")
+                let titulea2 = document.querySelector(".titulea2")
+                let titulea1 = document.querySelector(".titulea1")
+    
+                tituleProof0.classList.add("tituleProof0animate")
+                containerProof0.classList.add("containerProof0animate")
+                titulea2.classList.add("titulea2animate")
+                titulea1.classList.add("titulea1animate")
+            }, 13000);
 
             break
         case "proof0":
-            let atrasProof1 = document.getElementById("atrasProof1")
-            let medioProof1 = document.getElementById("medioProof1")
-            let adelanteProof1 = document.getElementById("adelanteProof1")
+            let cazadoresProof1 = document.querySelector(".cazadoresProof1")
+            let deProof1 = document.querySelector(".deProof1")
+            let riesgosProof1 = document.querySelector(".riesgosProof1")
+            let containerProof1 = document.querySelector(".containerProof1")
+
+            console.log(containerProof1)
+
+            // let adelanteProof1 = document.querySelector(".adelanteProof1")
+
+            // ----text proof1-----
+
+            cazadoresProof1.classList.add("cazadoresProof1animate")
+            deProof1.classList.add("deProof1animate")
+            riesgosProof1.classList.add("riesgosProof1animate")
+            containerProof1.classList.add("containerProof1animate")
+
+         
+
+
+            
+
 
 
             atrasProof1.classList.add("top100animateOpacity")
@@ -119,6 +133,17 @@ let build = (name, nextName, nextName2) =>{
             
             break;
 
+        
+        case "proof13":
+            if(!ready13){
+                ready13 = true
+                let tituleProof15 = document.querySelector(".tituleProof15")
+                let containerProof15 = document.querySelector(".containerProof15")
+                tituleProof15.classList.add("tituleProof15animate")
+                containerProof15.classList.add("containerProof15animate")
+            }
+            break;
+
         case "proof15":
             if(!ready16){
                 ready16 = true
@@ -132,36 +157,6 @@ let build = (name, nextName, nextName2) =>{
 
             
             break;
-
-        // case "proof21":
-        //     if(ready21  == false){
-                
-        //         let tituleProof24 = document.querySelector(".tituleProof24") 
-        //         let containerProof24Text = document.querySelector(".containerProof24Text") 
-            
-        //         let tituleProof24B = document.querySelector(".tituleProof24B") 
-        //         let containerProof24BText = document.querySelector(".containerProof24BText") 
-            
-        //         let subtituleProof24B = document.getElementById("subtituleProof24B")
-            
-            
-        //         setTimeout(() => {
-        //             ready21 == true
-        //             containerProof24Text.classList.add("transicion24Left")
-        //             containerProof24BText.classList.add("transicion24LeftReturn")
-            
-        //             tituleProof24.classList.add("transicion24Rigth")
-        //             tituleProof24B.classList.add("transicion24RigthReturn")
-        //             setTimeout(() => {
-        //                 subtituleProof24B.classList.add("transicion24RigthReturn")
-        //             }, 200);
-                    
-        //             document.getElementById(`paginaproof24`).style.display ="block"
-
-                    
-        //         }, 2000);
-        //     }
-        //     break;
 
         case "proof29":
                         
@@ -223,6 +218,8 @@ btnNextBuild.forEach((button, index) => {
         build(event.target.name, btnNext[index+1].name , btnNext[index+2].name)
     })
 })
+
+document.getElementById("proof0").addEventListener("mouseover", build())
 
 
 

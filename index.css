@@ -178,11 +178,11 @@ body {
 }
 
 .logo img{
-    width: 12rem;
+    width: 11.5rem;
 }
 
 .logo {
-    margin: 2rem;
+    margin: 1.5rem;
     position: absolute;
     z-index: 100;
 }
@@ -204,6 +204,24 @@ body {
 	100% {
 		/*box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
 		transform: translatey(0px);
+	}
+}
+.floatall2{
+    animation: floatall2 2.5s ease-in-out infinite;
+}
+
+@keyframes floatall2 {
+	0% {
+		/*box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
+		transform: translatey(5px);
+	}
+	50% {
+		/*box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);*/
+		transform: translatey(-10px);
+	}
+	100% {
+		/*box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
+		transform: translatey(5px);
 	}
 }
 

@@ -172,19 +172,22 @@ let sonidoNext = (name, nextName,nextName2) => {
         
         case "start": // de start a prof1
             if(!startbool){
-                ref0.play()  // subir lucho
-
+                ref0.play()
+                  // subir lucho
                 setTimeout(() => {
                     document.getElementById(`pagina${nextName}`).style.display ="block"
                     startbool = true
+                    refend.play()
                 }, 12000);
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
                 document.getElementById(`pagina${name}`).style.display ="none"
+                refend.play()
             }
             break
 
         case "proof0": // de start a prof1
+            refend.pause()
             if(!proof0bool){
                 proof0bool = true
                 ref1.play()
@@ -195,9 +198,15 @@ let sonidoNext = (name, nextName,nextName2) => {
                 document.getElementById(`pagina${name}`).style.display ="none"
                 }
             break
+        case "proof1": // de start a prof1
+            refend.play()
+            document.getElementById(`pagina${nextName}`).style.display ="block"
+            document.getElementById(`pagina${name}`).style.display ="none"
+            break
 
 
         case "proof2": // subir lucho
+        refend.pause()
         if(!proof2bool){
             // ref3.play()
             document.getElementById("videoProof3").play()
@@ -233,6 +242,7 @@ let sonidoNext = (name, nextName,nextName2) => {
         
 
         case "proof3a":
+            refend.play()
             if(!proof3abool){
             // setTimeout(() => {
                 document.getElementById(`pagina${nextName}`).style.display ="none"
@@ -246,6 +256,7 @@ let sonidoNext = (name, nextName,nextName2) => {
             break;
 
         case "proof4":
+            refend.pause()
             if(!proof4bool){
             // setTimeout(() => {
                 
@@ -286,7 +297,7 @@ let sonidoNext = (name, nextName,nextName2) => {
                 setTimeout(() => {
                     document.getElementById(`pagina${nextName}`).style.display ="block"
                     proof13bool = true
-                }, 50000);
+                }, 10000);
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
                 document.getElementById(`pagina${name}`).style.display ="none"

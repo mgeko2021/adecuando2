@@ -3,7 +3,7 @@
     width: 100vw;
     height: 100vh;
     top: 100%;
-    top: 0;
+    /* top: 0; */
     z-index: 9;
 }
 
@@ -171,16 +171,13 @@ p{
     animation-fill-mode: forwards
 }
 
-@keyframes palma3 {
-	0% {
-		transform: rotate(0deg) translatex(0px) ;
-	}
-
-	100% {
-        transform: rotate(5deg) translatex(50px);
-
-	}
+#palma3{
+    position: absolute;
+    bottom: -8rem;
+    width: 20rem;
+    right:2rem;
 }
+
 
 .palma4{
     animation: palma4 3s ease-in-out infinite;
@@ -320,21 +317,7 @@ p{
 	}
 }
 
-.palma3Out{
-    animation: palma3Out 1s ease-in-out ;
-    animation-fill-mode: forwards
-}
 
-@keyframes palma3Out {
-	0% {
-		transform: rotate(0deg) translatex(0px) ;
-	}
-
-	100% {
-        transform: rotate(-5deg) translatex(-50px);
-
-	}
-}
 
 
 .medioOut{
