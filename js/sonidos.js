@@ -343,7 +343,7 @@ let sonidoNext = (name, nextName,nextName2) => {
         case "proof24": // ele juego de arratrar
         if(!proof24bool){
             ref24.play()
-            proof24bool == true
+            proof24bool = true
             document.getElementById(`pagina${nextName}`).style.display ="none"
             
             document.getElementById("parentezco").disabled = true
