@@ -34,12 +34,12 @@
 
 .tituleProof41 h3{
     font-size: 3.5rem;
-    margin-top: -1.3rem;
+    margin-top: 1.5rem;
 }
 
 .containerProof41{
     position: absolute;
-    top: 47%;
+    top: 52%;
 }
 
 .containerProof41 p{
@@ -52,3 +52,41 @@
     margin-bottom: 2.5rem !important;
 }
 
+#completaste41{
+    position: absolute;
+    top: 16%;
+    left: 20%;
+}
+
+.tituleProof41animate {
+    animation: tituleProof41animate 1.8s ease-in-out ;
+    animation-fill-mode: forwards
+
+}
+
+@keyframes tituleProof41animate {
+	0% {
+		top:-100% ;
+	}
+
+    100% {
+        top: 20%;;
+    }
+}
+
+.containerProof41animate {
+    animation: containerProof41animate 1.8s ease-in-out ;
+    animation-fill-mode: forwards
+
+}
+
+
+@keyframes containerProof41animate {
+	0% {
+		top:100% ;
+	}
+
+    100% {
+        top: 50%;
+    }
+}

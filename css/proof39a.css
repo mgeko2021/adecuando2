@@ -71,7 +71,8 @@
 }
 
 .div39 img{
-    width: 10rem;
+    width: 8rem;
+    margin-right: 1rem;
 }
 
 #div39uno{
@@ -90,4 +91,12 @@
 #div39tres{
     top: 80%;
     left: 5%;
+}
+
+#palma39a{
+    position: absolute;
+    width: 25rem;
+    transform: rotate(10deg);
+    right:-16rem;
+    top:30%;
 }

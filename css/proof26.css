@@ -141,7 +141,7 @@
 
 #consanguinidad26{
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.938);
+    background-color: rgba(255, 255, 255, 0.979);
     width: 90%;
     height: 90%;
     border-radius: 2rem;
@@ -263,7 +263,7 @@
 
 #consanguinidad26a{
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.938);
+    background-color: rgba(255, 255, 255, 0.986);
     width: 90%;
     height: 90%;
     border-radius: 2rem;
@@ -281,7 +281,7 @@
 
 #consanguinidad26b{
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.938);
+    background-color: rgba(255, 255, 255, 0.986);
     width: 90%;
     height: 90%;
     border-radius: 2rem;
@@ -299,7 +299,7 @@
 
 #consanguinidad26dos{
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.959);
+    background-color: rgba(255, 255, 255, 0.986);
     width: 90%;
     border-radius: 2rem;
     z-index: 110;
@@ -523,6 +523,40 @@
     grid-column: 4 / 5;
     border-top:  1px solid black;
 }
+
+.mano{
+    position: absolute;
+    width: 3rem;
+    top: 83%;
+    z-index: 400 !important;
+    right: 10%;
+    display: none;
+}
+.manoanimate{
+    animation: manoanimate 3s ease-in-out infinite;
+    animation-fill-mode: forwards
+   
+}
+
+
+@keyframes manoanimate {
+	0% {
+        top: 83%;
+        right: 10%;
+        /* transform: rotate(369deg); */
+	}
+
+    50%{
+        top: 80%;
+        right: 15%;
+    }
+
+    100% {
+        top: 83%;
+        right: 10%;
+    }
+}
+
 
 
 

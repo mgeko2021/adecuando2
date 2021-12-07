@@ -70,6 +70,9 @@ let answer32 = () =>{
                 document.getElementById(`proof32`).classList.add('nextUP');
                 document.getElementById(`proof41`).classList.add('next2UP');
 
+                document.querySelector(".containerProof41").classList.add("containerProof41animate")
+                document.querySelector(".tituleProof41").classList.add("tituleProof41animate")
+
                 
                 // proof 32
                 var ref41 = new Audio();

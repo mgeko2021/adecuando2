@@ -477,8 +477,15 @@ let sonidoNext = (name, nextName,nextName2) => {
                 document.getElementById(`pagina${name}`).style.display ="none"
             }
             break; 
+
+        case "proof38": // listo
+                refend.play()
+                document.getElementById(`pagina${nextName}`).style.display ="block"
+                document.getElementById(`pagina${name}`).style.display ="none"
+            break; 
             
         case "proof39": // listo
+            refend.pause()
             if(!proof39bool){
                 document.getElementById(`pagina${nextName}`).style.display ="none"
                 proof39bool = true

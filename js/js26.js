@@ -5,6 +5,8 @@ let btn26a = document.getElementById("btn26a")
 let btn26b = document.getElementById("btn26b")
 let btn26dos = document.getElementById("btn26dos")
 
+const mano = document.querySelector(".mano")
+
 let recorrio = false
 
 let grado = document.getElementById("grado")
@@ -93,6 +95,8 @@ let transition26unobClose = ()=>{
     parentezco.classList.remove("clasegover")
     parentezco.disabled = true
 
+    mano.style.display = "block"
+
     let consanguinidad26b = document.getElementById("consanguinidad26b")
 
     consanguinidad26b.classList.remove("next2")
@@ -105,6 +109,7 @@ btn26b.addEventListener("click", transition26unobClose)
 
 
 let transition26dos = () =>{
+    mano.style.display = "none"
     if(!ref26dbool){
         ref26dbool  = true
         ref26d.play()

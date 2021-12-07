@@ -84,6 +84,7 @@ let  move3d = (e) =>{
     let medioProof26 = document.getElementById("medioProof26")
     let atrasProof29 = document.getElementById("atrasProof29")
     let medioProof29 = document.getElementById("medioProof29")
+    let proof30Img = document.getElementById("proof30Img")
     let atrasProof30 = document.getElementById("atrasProof30")
     let adelanteProof30 = document.getElementById("adelanteProof30")
     let atras32 = document.getElementById("atras32")
@@ -96,6 +97,7 @@ let  move3d = (e) =>{
     let medioProof36 = document.getElementById("medioProof36")
     let atrasProof36a = document.getElementById("atrasProof36a")
     let medioProof36a = document.getElementById("medioProof36a")
+    let matas36 = document.getElementById("matas36")
     let atrasProof37 = document.getElementById("atrasProof37")
     let medioProof37 = document.getElementById("medioProof37")
     let atrasProof38 = document.getElementById("atrasProof38")
@@ -160,6 +162,7 @@ let  move3d = (e) =>{
     medioProof26.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
     atrasProof29.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
     medioProof29.style.transform = `translate3d(${recta2 }px,${recta2y}px, 0px)`
+    proof30Img.style.transform = `translate3d(${recta2 }px,${recta2y}px, 0px)`
     // atrasProof30.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     atras32.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     adelante32.style.transform = `translate3d(${recta}px,${rectay}px, 0px)`
@@ -172,6 +175,7 @@ let  move3d = (e) =>{
     medioProof36.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
     atrasProof36a.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     medioProof36a.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
+    matas36.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     atrasProof37.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     medioProof37.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
     atrasProof38.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
