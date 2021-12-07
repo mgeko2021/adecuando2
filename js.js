@@ -126,7 +126,7 @@ let transitionNext = (name, nextName, nextName2) => {
 
 
                     transicion1 = true
-                }, 13000);
+                }, 15000);
 
             }
             break

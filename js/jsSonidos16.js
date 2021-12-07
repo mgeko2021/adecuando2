@@ -18,6 +18,11 @@ var ref16 = new Audio();
 ref16.src="./sonidos/Pagina10/pagina10.mp3";
 
 
+let btn16returnall = document.getElementById("btn16returnall")
+
+let btn16returnone = document.getElementById("btn16returnone")
+
+let btn16return = document.getElementById("btn16return")
 
 
 
@@ -39,14 +44,17 @@ const sonidoproductServSon16 = (name) =>{
             document.getElementById("videoProof16PEP1").play()
 
             if(!click16a){
-                click16a = true
-                setTimeout(() => {
-                    document.getElementById("btn16returnone").style.display = "block"
-                    // document.getElementById("videoProof16PEP1").style.display = "none"
-                    // document.getElementById("videoProof16PEP1show").style.display = "block"
 
-                // }, 56000);
-                }, 2000);
+                document.getElementById("videoProof16PEP1").addEventListener("ended", function(){
+                    document.getElementById("btn16returnone").style.display = "block"
+                    click16a = true
+
+                    document.getElementById("videoProof16PEP1").style.display = "none"
+                    document.getElementById("videoProof16PEP1show").style.display = "block"
+
+            
+                  });
+    
             } else {
                 document.getElementById("btn16returnone").style.display = "block"
             }
@@ -66,14 +74,16 @@ const sonidoproductServSon16 = (name) =>{
             video16dos.classList.add("next2")
             document.getElementById("videoProof16PEP2").play()
             if(!click16b){
-                click16b = true
-                setTimeout(() => {
+                
+                document.getElementById("videoProof16PEP2").addEventListener("ended", function(){
+                    click16b = true
                     document.getElementById("btn16returnall").style.display = "block"
-                    // document.getElementById("videoProof16PEP2").style.display = "none"
-                    // document.getElementById("videoProof16PEP2show").style.display = "block"
+
+                    document.getElementById("videoProof16PEP2").style.display = "none"
+                    document.getElementById("videoProof16PEP2show").style.display = "block"
 
                 // }, 20000);
-                }, 2000);
+                });
             } else{
                 document.getElementById("btn16returnall").style.display = "block"
             }
@@ -93,14 +103,15 @@ const sonidoproductServSon16 = (name) =>{
             document.getElementById("videoProof16PEP3").play()
 
             if(!click16c){
-                click16c = true
-                setTimeout(() => {
+
+                document.getElementById("videoProof16PEP3").addEventListener("ended", function(){
+                    click16c = true
                     document.getElementById("btn16returnall").style.display = "block"
-                    // document.getElementById("videoProof16PEP3").style.display = "none"
-                    // document.getElementById("videoProof16PEP3show").style.display = "block"
+                    document.getElementById("videoProof16PEP3").style.display = "none"
+                    document.getElementById("videoProof16PEP3show").style.display = "block"
 
                 // }, 50000);
-                }, 2000);
+            });
             } else {
                 document.getElementById("btn16returnall").style.display = "block"
             }
@@ -125,13 +136,10 @@ productServSon16.forEach((productServSonImg, index) => {
         sonidoproductServSon16(event.target.name)
     })
 })
+btn16returnall.addEventListener("click",sonidoproductServSon16) 
+btn16return.addEventListener("click",sonidoproductServSon16) 
 
 
-let btn16returnall = document.getElementById("btn16returnall")
-
-let btn16returnone = document.getElementById("btn16returnone")
-
-let btn16return = document.getElementById("btn16return")
 
 let siguiente1_16 = () =>{
     video16dos.classList.remove("next2")

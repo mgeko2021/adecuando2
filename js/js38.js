@@ -25,6 +25,7 @@ let letterShot = (id) => {
 
         puntos38.classList.remove("emergentesreturn");
         puntos38.classList.add("emergentes"); 
+        refexito.play()
         setTimeout(function(){ 
             puntos38.classList.remove("emergentes");
             puntos38.classList.add("emergentesreturn");
@@ -44,7 +45,6 @@ let letterShot = (id) => {
 
             // document.getElementById(`paginaproof39`).style.display ="block"
 
-            refexito.play()
 
             ref39.play()
             setTimeout(() => {

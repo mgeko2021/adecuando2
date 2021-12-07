@@ -356,7 +356,8 @@ let sonidoNext = (name, nextName,nextName2) => {
             
         } else {
             document.getElementById(`pagina${nextName}`).style.display ="block"
-        }
+            document.getElementById(`pagina${name}`).style.display ="none"            
+    }
             break;
 
         case "proof29":  //modificar
@@ -367,7 +368,8 @@ let sonidoNext = (name, nextName,nextName2) => {
                 proof29bool = true
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
-                document.getElementById(`pagina${name}`).style.display ="none"            }
+                document.getElementById(`pagina${name}`).style.display ="none"            
+            }
             break;            
 
         // case "proof30":
@@ -402,8 +404,12 @@ let sonidoNext = (name, nextName,nextName2) => {
             if(!proof34bool){
                 proof34bool = true
                 document.getElementById("videoProof36").play()
-                document.getElementById(`pagina${nextName}`).style.display ="block"
-                document.getElementById(`pagina${name}`).style.display ="none"
+                document.getElementById("videoProof36").addEventListener("ended", function(){
+                    document.getElementById(`videoProof36Show`).style.display ="block"
+                    document.getElementById(`videoProof36`).style.display ="none"
+                    document.getElementById(`pagina${nextName}`).style.display ="block"
+                    document.getElementById(`pagina${name}`).style.display ="none"
+                });
     
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
@@ -416,11 +422,16 @@ let sonidoNext = (name, nextName,nextName2) => {
         case "proof36": // listo
             if(!proof36bool){
                 document.getElementById("videoProof36").pause()
-                ref36a.play()
-                setTimeout(() => {
+                // ref36a.play()
+                // setTimeout(() => {
+                    document.getElementById("medioProof36a").classList.add("floatall")
+                    document.getElementById("titule36a").classList.add("floatall")
+                    
                     document.getElementById(`pagina${nextName}`).style.display ="block"
+                    document.getElementById(`pagina${name}`).style.display ="none"
+
                     proof36bool = true
-                }, 24000);
+                // }, 24000);
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
                 document.getElementById(`pagina${name}`).style.display ="none"
@@ -429,11 +440,15 @@ let sonidoNext = (name, nextName,nextName2) => {
 
         case "proof36a": // listo
             if(!proof36abool){
-                ref36b.play()
-                setTimeout(() => {
-                    document.getElementById(`pagina${nextName}`).style.display ="block"
-                    proof36abool = true
-                }, 4000);
+                ref36a.play()
+                proof36abool = true
+                document.getElementById(`pagina${nextName}`).style.display ="block"
+                document.getElementById(`pagina${name}`).style.display ="none"
+
+
+                // setTimeout(() => {
+                    // document.getElementById(`pagina${nextName}`).style.display ="block"
+                // }, 4000);
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
                 document.getElementById(`pagina${name}`).style.display ="none"
@@ -442,6 +457,7 @@ let sonidoNext = (name, nextName,nextName2) => {
 
         case "proof37": // listo
             if(!proof37bool){
+                ref36a.pause()
                 ref37.play()
                 document.getElementById(`pagina${nextName}`).style.display ="none"
                 proof37bool = true

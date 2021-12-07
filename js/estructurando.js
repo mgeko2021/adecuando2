@@ -125,7 +125,7 @@ let build = (name, nextName, nextName2) =>{
                 setTimeout(() => {
                     let containerProof16 = document.querySelector(".containerProof16")
                     containerProof16.classList.add("next2")
-                }, 12000);
+                }, 3000);
     
             }
             
@@ -205,7 +205,7 @@ let build = (name, nextName, nextName2) =>{
                     ref39b.play()
                     setTimeout(() => {
                         document.getElementById(`paginaproof39a`).style.display ="block"
-                    }, 63000);
+                    }, 46000);
                 }, 17000);
             }
 

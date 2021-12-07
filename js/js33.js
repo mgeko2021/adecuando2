@@ -238,9 +238,7 @@ ref34b.src="./sonidos/Pagina18/18b.mp3";
           document.getElementById(`proof33`).classList.add('nextUP');
           document.getElementById(`proof34`).classList.add('next2UP');
   
-
-          setTimeout(() => {
-
+        ref34.addEventListener("ended", function(){
               const containerProof34hidden = document.querySelector(".containerProof34hidden")
               const containerProof34show = document.querySelector(".containerProof34show")
               const tituleProof34 = document.querySelector(".tituleProof34")
@@ -258,14 +256,10 @@ ref34b.src="./sonidos/Pagina18/18b.mp3";
               tituleProof34.style.display = "none"
               containerProof34show.classList.add("opacityanimate")
 
-              setTimeout(() => {
+              ref34b.addEventListener("ended", function(){
                 document.getElementById(`paginaproof34`).style.display ="block"
-              }, 9000);
-
-      
-          }, 58000);
-
-
+              });
+            });
       }, 6000);
 
       }
