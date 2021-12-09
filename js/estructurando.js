@@ -200,7 +200,7 @@ let build = (name, nextName, nextName2) =>{
                     ref39b.play()
                     setTimeout(() => {
                         document.getElementById(`paginaproof39a`).style.display ="block"
-                    }, 46000);
+                    }, 70000);
                 }, 17000);
             }
 

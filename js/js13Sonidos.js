@@ -22,7 +22,7 @@ let click13a = false
 let click13b = false
 let click13c = false
 let click13d = false
-// let click13e = false
+let click13e = false
 
 console.log(productServSon13)
 
@@ -33,13 +33,13 @@ const sonidoproductServSon13 = (name) =>{
     let radar2 = document.querySelectorAll(".radar13b")
     let radar3 = document.querySelectorAll(".radar13c")
     let radar4 = document.querySelectorAll(".radar13d")
-    // let radar5 = document.querySelectorAll(".radar13e")
+    let radar5 = document.querySelectorAll(".radar13e")
 
     let sonido3a = document.getElementById("sonido13a")
     let sonido3b = document.getElementById("sonido13b")
     let sonido3c = document.getElementById("sonido13c")
     let sonido3d = document.getElementById("sonido13d")
-    // let sonido3e = document.getElementById("sonido13e")
+    let sonido3e = document.getElementById("sonido13e")
 
 
     switch (name) {
@@ -51,16 +51,16 @@ const sonidoproductServSon13 = (name) =>{
                 radar2[i].style.display= "none"
                 radar3[i].style.display= "none"
                 radar4[i].style.display= "none"
-                // radar5[i].style.display= "none"
+                radar5[i].style.display= "none"
             }
             sonido3a.style.display= "block"
             sonido3b.style.display= "none"
             sonido3c.style.display= "none"
             sonido3d.style.display= "none"
-            // sonido3e.style.display= "none"
+            sonido3e.style.display= "none"
 
             ref8_d.pause()
-            // ref8_e.pause()
+            ref8_e.pause()
             ref8_b.pause()
             ref8_c.pause()
             ref8.pause()
@@ -74,51 +74,49 @@ const sonidoproductServSon13 = (name) =>{
                 radar2[i].style.display= "none"
                 radar3[i].style.display= "none"
                 radar1[i].style.display= "none"
-                // radar5[i].style.display= "none"
+                radar5[i].style.display= "none"
 
             }
             sonido3d.style.display= "block"
             sonido3b.style.display= "none"
             sonido3c.style.display= "none"
             sonido3a.style.display= "none"
-            // sonido3e.style.display= "none"
+            sonido3e.style.display= "none"
 
         
 
             ref8_a.pause()
-            // ref8_e.pause()
+            ref8_e.pause()
             ref8_b.pause()
             ref8_c.pause()
             ref8.pause()
             break;
             
-        // case "sol13e":
-        //     ref8_e.play()
-        //     click13e = true
+        case "sol13e":
+            ref8_e.play()
+            click13e = true
 
-        //     for (let i = 0; i < radar5.length; i++) {
-        //         radar5[i].style.display= "block"
-        //         radar2[i].style.display= "none"
-        //         radar3[i].style.display= "none"
-        //         radar4[i].style.display= "none"
-        //         radar1[i].style.display= "none"
-        //         radar6[i].style.display= "none"
+            for (let i = 0; i < radar5.length; i++) {
+                radar5[i].style.display= "block"
+                radar2[i].style.display= "none"
+                radar3[i].style.display= "none"
+                radar4[i].style.display= "none"
+                radar1[i].style.display= "none"
 
-        //     }
-        //     sonido3f.style.display= "block"
-        //     sonido3b.style.display= "none"
-        //     sonido3c.style.display= "none"
-        //     sonido3d.style.display= "none"
-        //     sonido3e.style.display= "none"
-        //     sonido3a.style.display= "none"
+            }
+            sonido3e.style.display= "block"
+            sonido3b.style.display= "none"
+            sonido3c.style.display= "none"
+            sonido3d.style.display= "none"
+            sonido3a.style.display= "none"
 
 
-        //     ref8_a.pause()
-        //     ref8_d.pause()
-        //     ref8_b.pause()
-        //     ref8_c.pause()
-        //     ref8.pause()
-        //     break;
+            ref8_a.pause()
+            ref8_d.pause()
+            ref8_b.pause()
+            ref8_c.pause()
+            ref8.pause()
+            break;
     
         case "sol13b":
             click13b = true
@@ -129,19 +127,19 @@ const sonidoproductServSon13 = (name) =>{
                 radar1[i].style.display= "none"
                 radar3[i].style.display= "none"
                 radar4[i].style.display= "none"
-                // radar5[i].style.display= "none"
+                radar5[i].style.display= "none"
 
             }
             sonido3b.style.display= "block"
             sonido3a.style.display= "none"
             sonido3c.style.display= "none"
             sonido3d.style.display= "none"
-            // sonido3e.style.display= "none"
+            sonido3e.style.display= "none"
 
 
             ref8_a.pause()
             ref8_d.pause()
-            // ref8_e.pause()
+            ref8_e.pause()
             ref8_c.pause()
             ref8.pause()
             break;
@@ -155,19 +153,19 @@ const sonidoproductServSon13 = (name) =>{
                 radar2[i].style.display= "none"
                 radar1[i].style.display= "none"
                 radar4[i].style.display= "none"
-                // radar5[i].style.display= "none"
+                radar5[i].style.display= "none"
 
             }
             sonido3c.style.display= "block"
             sonido3b.style.display= "none"
             sonido3a.style.display= "none"
             sonido3d.style.display= "none"
-            // sonido3e.style.display= "none"
+            sonido3e.style.display= "none"
 
 
             ref8_a.pause()
             ref8_d.pause()
-            // ref8_e.pause()
+            ref8_e.pause()
             ref8_b.pause()
             ref8.pause()
             break;
@@ -175,7 +173,7 @@ const sonidoproductServSon13 = (name) =>{
     }
 
     if(click13a && click13b && click13c && click13d 
-        // && click13e 
+        && click13e 
         ){
         document.getElementById(`paginaproof13`).style.display = "block"
     }
