@@ -135,11 +135,12 @@ console.log()
             puntos6.classList.remove("emergentesreturn");
             puntos6.classList.add("emergentes"); 
             refexito.play()
+            paginadinamicacorrecta.play()
+
 
             setTimeout(function(){ 
                 puntos6.classList.remove("emergentes");
                 puntos6.classList.add("emergentesreturn");
-                paginadinamicacorrecta.play()
 
           
                 // terminadoJuego = true
