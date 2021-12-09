@@ -10,6 +10,13 @@ refexito.src="./sonidos/EXITO_DINAMICAS.mp3";
 var refnoexito = new Audio();
 refnoexito.src="./sonidos/ERROR_DINAMICAS.mp3";
 
+var pagina21dinamicacorrecta = new Audio();
+pagina21dinamicacorrecta.src="./sonidos/Pagina21/pagina21dinamicacorrecta.mp3";
+
+var pagina21dinamicaINcorrecta = new Audio();
+pagina21dinamicaINcorrecta.src="./sonidos/Pagina21/pagina21dinamicaINcorrecta.mp3";
+
+
 
 let letterShot = (id) => { 
 
@@ -26,6 +33,7 @@ let letterShot = (id) => {
         puntos38.classList.remove("emergentesreturn");
         puntos38.classList.add("emergentes"); 
         refexito.play()
+        pagina21dinamicacorrecta.play()
         setTimeout(function(){ 
             puntos38.classList.remove("emergentes");
             puntos38.classList.add("emergentesreturn");
@@ -84,12 +92,13 @@ let letterShot = (id) => {
             nopuntos38.classList.remove("emergentesreturn");
             nopuntos38.classList.add("emergentes"); 
             refnoexito.play()
+            pagina21dinamicaINcorrecta.play()
             setTimeout(function(){ 
                 nopuntos38.classList.remove("emergentes");
                 nopuntos38.classList.add("emergentesreturn");
 
         
-            }, 3000);
+            }, 6000);
         }
     }
 

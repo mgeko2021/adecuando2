@@ -8,6 +8,12 @@ refexito.src="./sonidos/EXITO_DINAMICAS.mp3";
 var refnoexito = new Audio();
 refnoexito.src="./sonidos/ERROR_DINAMICAS.mp3";
 
+var pagina13dinamicacorrecta = new Audio();
+pagina13dinamicacorrecta.src="./sonidos/Pagina13/pagina13dinamicacorrecta.mp3";
+
+var pagina13dinamicaINcorrecta = new Audio();
+pagina13dinamicaINcorrecta.src="./sonidos/Pagina13/pagina13dinamicaINcorrecta.mp3";
+
 let answer21 = () =>{
 
     console.log("entre")
@@ -56,6 +62,7 @@ let answer21 = () =>{
             puntos21.classList.remove("emergentesreturn");
             puntos21.classList.add("emergentes"); 
             refexito.play()
+            pagina13dinamicacorrecta.play()
             setTimeout(function(){ 
                 puntos21.classList.remove("emergentes");
                 puntos21.classList.add("emergentesreturn");
@@ -103,7 +110,7 @@ let answer21 = () =>{
                 
           
                 // terminadoJuego = true
-            }, 4000);
+            }, 12000);
 
             // ------´
   
@@ -125,7 +132,7 @@ let answer21 = () =>{
  
 
     
-            }, 6000);
+            }, 12000);
 
         } else {
 
@@ -205,7 +212,7 @@ let answer21 = () =>{
                 nopuntos21.classList.add("emergentesreturn");
                 // paginaproof26.style.display = "block" 
                 // terminadoJuego = true
-            }, 4000);
+            }, 8000);
             }
     }
 }

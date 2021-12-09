@@ -9,6 +9,15 @@ refexito.src="./sonidos/EXITO_DINAMICAS.mp3";
 var refnoexito = new Audio();
 refnoexito.src="./sonidos/ERROR_DINAMICAS.mp3";
 
+var refnoexito = new Audio();
+refnoexito.src="./sonidos/ERROR_DINAMICAS.mp3";
+
+var paginadinamicacorrecta = new Audio();
+paginadinamicacorrecta.src="./sonidos/Pagina6/paginadinamicacorrecta.mp3";
+
+var paginadinamicaINcorrecta = new Audio();
+paginadinamicaINcorrecta.src="./sonidos/Pagina6/paginadinamicaINcorrecta.mp3";
+
 
 function start2(e) {
     e.dataTransfer.effecAllowed = 'move'; // Define el efecto como mover (Es el por defecto)
@@ -130,10 +139,11 @@ console.log()
             setTimeout(function(){ 
                 puntos6.classList.remove("emergentes");
                 puntos6.classList.add("emergentesreturn");
+                paginadinamicacorrecta.play()
 
           
                 // terminadoJuego = true
-            }, 4000);
+            }, 8000);
 
             setTimeout(() => {
                 endGame =true
@@ -166,7 +176,7 @@ console.log()
                     document.getElementById(`paginaproof8`).style.display ="block"
                 }, 45000);
 
-            }, 6000);
+            }, 10000);
 
         
         } else {
@@ -209,6 +219,7 @@ console.log()
             nopuntos6.classList.remove("emergentesreturn");
             nopuntos6.classList.add("emergentes"); 
             refnoexito.play()
+            paginadinamicaINcorrecta.play()
 
             setTimeout(function(){ 
                 nopuntos6.classList.remove("emergentes");
@@ -216,7 +227,7 @@ console.log()
 
                 // paginaproof26.style.display = "block" 
                 // terminadoJuego = true
-            }, 4000);
+            }, 6000);
         }
     }
   }

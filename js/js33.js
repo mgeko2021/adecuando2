@@ -4,6 +4,12 @@ refexito.src="./sonidos/EXITO_DINAMICAS.mp3";
 var refnoexito = new Audio();
 refnoexito.src="./sonidos/ERROR_DINAMICAS.mp3";
 
+var pagina17dinamicacorrecta = new Audio();
+pagina17dinamicacorrecta.src="./sonidos/Pagina17/pagina17dinamicacorrecta.mp3";
+
+var pagina17dinamicaINcorrecta = new Audio();
+pagina17dinamicaINcorrecta.src="./sonidos/Pagina17/pagina17dinamicaINcorrecta.mp3";
+
 /**
  * 
  * 
@@ -218,13 +224,14 @@ ref34b.src="./sonidos/Pagina18/18b.mp3";
         puntos6.classList.remove("emergentesreturn");
         puntos6.classList.add("emergentes"); 
         refexito.play()
+        pagina17dinamicacorrecta.play()
   
         setTimeout(() => {
             puntos6.classList.remove("emergentes");
             puntos6.classList.add("emergentesreturn");
             refexito.play()
             questioncuatro.style.display = " none"
-        }, 4000);
+        }, 7000);
 
         
   
@@ -260,7 +267,7 @@ ref34b.src="./sonidos/Pagina18/18b.mp3";
                 document.getElementById(`paginaproof34`).style.display ="block"
               });
             });
-      }, 6000);
+      }, 9000);
 
       }
       
@@ -268,7 +275,7 @@ ref34b.src="./sonidos/Pagina18/18b.mp3";
         nopuntos6.classList.remove("emergentesreturn");
         nopuntos6.classList.add("emergentes"); 
         refnoexito.play()
-        refnoexito
+        pagina17dinamicaINcorrecta.play()
         setTimeout(function(){ 
             if(juego1 == false){
                 contenedorPieza331.style.background = "#ea0043"
@@ -294,7 +301,7 @@ ref34b.src="./sonidos/Pagina18/18b.mp3";
             nopuntos6.classList.add("emergentesreturn");
             document.getElementById("contenedorPieza433").appendChild(document.getElementById("pieza133"));
 
-        }, 4000);
+        }, 6000);
       }
 
 }

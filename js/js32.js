@@ -7,6 +7,13 @@ refexito.src="./sonidos/EXITO_DINAMICAS.mp3";
 var refnoexito = new Audio();
 refnoexito.src="./sonidos/ERROR_DINAMICAS.mp3";
 
+var pagina24dinamicacorrecta = new Audio();
+pagina24dinamicacorrecta.src="./sonidos/Pagina24/pagina24dinamicacorrecta.mp3";
+
+var pagina24dinamicaINcorrecta = new Audio();
+pagina24dinamicaINcorrecta.src="./sonidos/Pagina24/pagina24dinamicaINcorrecta.mp3";
+
+
 let answer32 = () =>{
 
     // -------- mergentes--------
@@ -53,11 +60,12 @@ let answer32 = () =>{
             puntos32.classList.remove("emergentesreturn");
             puntos32.classList.add("emergentes"); 
             refexito.play()
+            pagina24dinamicacorrecta.play()
             setTimeout(function(){ 
                 puntos32.classList.remove("emergentes");
                 puntos32.classList.add("emergentesreturn");
           
-            }, 4000);
+            }, 7000);
 
             
             setTimeout(() => {
@@ -105,7 +113,7 @@ let answer32 = () =>{
                 // document.getElementById(`paginaproof41`).style.display ="block"
 
     
-            }, 6000);
+            }, 9000);
             
 
 
@@ -182,12 +190,13 @@ let answer32 = () =>{
             nopuntos32.classList.remove("emergentesreturn");
             nopuntos32.classList.add("emergentes"); 
             refnoexito.play()
+            pagina24dinamicaINcorrecta.play()
             setTimeout(function(){ 
                 nopuntos32.classList.remove("emergentes");
                 nopuntos32.classList.add("emergentesreturn");
                 // paginaproof26.style.display = "block" 
                 // terminadoJuego = true
-            }, 4000);
+            }, 5000);
             }
 
     }

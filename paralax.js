@@ -186,8 +186,8 @@ let  move3d = (e) =>{
     adelante39a.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     atrasProof40.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     medioProof40.style.transform = `translate3d(${recta}px,${rectay}px, 0px)`
-    atras21.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
-    adelante21.style.transform = `translate3d(${recta}px,${rectay}px, 0px)`
+    // atras21.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
+    // adelante21.style.transform = `translate3d(${recta}px,${rectay}px, 0px)`
     atras41.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
 adelante41.style.transform = `translate3d(${recta}px,${recta2}px, 0px)`
 
