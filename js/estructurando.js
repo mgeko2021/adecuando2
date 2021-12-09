@@ -87,7 +87,7 @@ let build = (name, nextName, nextName2) =>{
             let adelanteProof2 = document.getElementById("adelanteProof2")
             setTimeout(() => {
                 adelanteProof2.classList.add("topmenos100animate")
-            }, 5000);
+            }, 15000);
             
             break;
 

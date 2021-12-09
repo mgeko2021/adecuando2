@@ -2,7 +2,7 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
-    top: 0%;
+    /* top: 0%; */
     top: 100%;
     z-index: 7;
 }
@@ -115,3 +115,4 @@
     left: 1rem;
     transform: rotate(30deg);
 }
+

@@ -138,7 +138,7 @@ let  move3d = (e) =>{
     adelante.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
     medio.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     hand2.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
-    atrasProof1.style.transform = `translate3d(${recta}px,${rectay}px, 0px)`
+    atrasProof1.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     medioProof1.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
     medioProof00.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
     adelanteProof2.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
@@ -148,7 +148,7 @@ let  move3d = (e) =>{
     medioProof8.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
     atras6.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     medioProof13.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
-    adelanteProof13.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
+    // adelanteProof13.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     atrasProof15.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     medioProof15.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
     atras17.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
@@ -179,11 +179,11 @@ let  move3d = (e) =>{
     atrasProof37.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     medioProof37.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
     atrasProof38.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
-    adelanteProof38.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
+    adelanteProof38.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
     atras39.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     medio39.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
     atras39a.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
-    adelante39a.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
+    adelante39a.style.transform = `translate3d(${recta }px,${rectay}px, 0px)`
     atrasProof40.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`
     medioProof40.style.transform = `translate3d(${recta}px,${rectay}px, 0px)`
     // atras21.style.transform = `translate3d(${recta2}px,${recta2y}px, 0px)`

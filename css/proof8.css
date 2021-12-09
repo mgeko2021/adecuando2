@@ -105,7 +105,7 @@
 }
 
 .tituleProof8animate{
-    animation: tituleProof8 3.8s ease-in-out ;
+    animation: tituleProof8 0.8s ease-in-out ;
     animation-fill-mode: forwards
 }
 
@@ -115,7 +115,7 @@
 		top:-100% ;
 	}
 
-	20% {
+	/* 20% {
         top:75%;
 
 	}
@@ -145,14 +145,14 @@
     }
     98%{
         top:10%;
-    }
+    } */
     100% {
         top:20%;
     }
 }
 
 .containerProof8animate{
-    animation: containerProof8 4s ease-in-out ;
+    animation: containerProof8 1.3s ease-in-out ;
     animation-fill-mode: forwards
 }
 
