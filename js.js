@@ -5,6 +5,9 @@ let btnBefore = document.querySelectorAll('body button.beforeBtn')
 var sonido = new Audio();
 sonido.src="";
 
+var ref0 = new Audio();
+ref0.src="./sonidos/Pagina1/pagina1.mp3";
+
 let transicionAuto = false
 let transicionAutoVHV = false
 let proof15VHV = false
@@ -21,8 +24,11 @@ let transitionNext = (name, nextName, nextName2) => {
     switch (name) {
 
         case "start":
-            if (sound1 == false) {
-                setTimeout(() => {
+
+            if(!startbool){
+                ref0.play()
+                ref0.addEventListener("ended", function(){
+                    startbool = true
                     document.getElementById(`${name}`).classList.remove('beforeUP');
                     document.getElementById(`${nextName}`).classList.remove('beforeUP');
                     document.getElementById(`${nextName}`).classList.remove('before2UP');
@@ -30,9 +36,11 @@ let transitionNext = (name, nextName, nextName2) => {
                     // document.getElementById(${name}).style.left = "0%"
                     document.getElementById(`${name}`).classList.add('nextUP');
                     document.getElementById(`${nextName}`).classList.add('next2UP');
-                    sound1 = true
-                        
-                }, 12000);
+                    document.getElementById(`pagina${nextName}`).style.display ="block"
+                    // refend.play()
+
+                });
+        
     
             } else{
                 document.getElementById(`${name}`).classList.remove('beforeUP');

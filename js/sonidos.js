@@ -5,8 +5,8 @@ let btnBeforeSonidos = document.querySelectorAll('body button.beforeBtn')
 let nivelesZindex = document.querySelector(".logo")
 
 //pagina start
-var ref0 = new Audio();
-ref0.src="./sonidos/Pagina1/pagina1.mp3";
+// var ref0 = new Audio();
+// ref0.src="./sonidos/Pagina1/pagina1.mp3";
 
 // proof 0
 var ref1 = new Audio();
@@ -172,13 +172,13 @@ let sonidoNext = (name, nextName,nextName2) => {
         
         case "start": // de start a prof1
             if(!startbool){
-                ref0.play()
-                  // subir lucho
-                setTimeout(() => {
-                    document.getElementById(`pagina${nextName}`).style.display ="block"
+                ref0.addEventListener("ended", function(){
                     startbool = true
+                    document.getElementById(`pagina${nextName}`).style.display ="block"
                     refend.play()
-                }, 12000);
+
+                });
+      
             } else {
                 document.getElementById(`pagina${nextName}`).style.display ="block"
                 document.getElementById(`pagina${name}`).style.display ="none"
